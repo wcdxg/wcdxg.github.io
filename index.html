@@ -81,8 +81,6 @@
 			
 				<li><a href="/archives" >归档</a></li>
 			
-				<li><a href="/photos" >相册</a></li>
-			
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
@@ -132,6 +130,12 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
       
+      <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0.5em;" 
+        href="https://github.com/yuaihen" target="_blank">
+        <img src="/img/forkme.png"
+          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+      
+      
 <nav id="mobile-nav">
   	<div class="overlay js-overlay" style="background: #D3D1DC"></div>
 	<div class="btnctn js-mobile-btnctn">
@@ -151,8 +155,6 @@
 			<p class="header-subtitle"><i class="icon icon-quo-left"></i>贪吃贪睡，长命百岁~<i class="icon icon-quo-right"></i></p>
 			
 			
-			
-				
 			
 				
 			
@@ -182,13 +184,11 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 25%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/categories">分类</a></li>
+					<li style="width: 33.333333333333336%"><a href="/categories">分类</a></li>
 		        
-					<li style="width: 25%"><a href="/archives">归档</a></li>
-		        
-					<li style="width: 25%"><a href="/photos">相册</a></li>
+					<li style="width: 33.333333333333336%"><a href="/archives">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -236,31 +236,26 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="设置用户名和邮箱地址"><a href="#设置用户名和邮箱地址" class="headerlink" title="设置用户名和邮箱地址"></a>设置用户名和邮箱地址</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git config --global user.name <span class="hljs-string">"Your Name"</span><br>$ git config --global user.email <span class="hljs-string">"email@example.com"</span><br></code></pre></td></tr></table></figure>
-
-
-<h3 id="Git初始化"><a href="#Git初始化" class="headerlink" title="Git初始化"></a>Git初始化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git init<br></code></pre></td></tr></table></figure>
-
+    <h3 id="设置用户名和邮箱地址"><a href="#设置用户名和邮箱地址" class="headerlink" title="设置用户名和邮箱地址"></a>设置用户名和邮箱地址</h3><pre><code class="bash">$ git config --global user.name &quot;Your Name&quot;
+$ git config --global user.email &quot;email@example.com&quot;</code></pre>
+<h3 id="Git初始化"><a href="#Git初始化" class="headerlink" title="Git初始化"></a>Git初始化</h3><pre><code class="bash">git init</code></pre>
 <h3 id="Git添加文件"><a href="#Git添加文件" class="headerlink" title="Git添加文件"></a>Git添加文件</h3><ul>
 <li>添加单个文件  </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git add readme.txt<br></code></pre></td></tr></table></figure>
-
+<pre><code class="bash">git add readme.txt</code></pre>
 <ul>
 <li>添加所有文件</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">git add .<br></code></pre></td></tr></table></figure>
-
-<h3 id="Git查看状态"><a href="#Git查看状态" class="headerlink" title="Git查看状态"></a>Git查看状态</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">git status<br></code></pre></td></tr></table></figure>
-
+<pre><code class="java">git add .</code></pre>
+<h3 id="Git查看状态"><a href="#Git查看状态" class="headerlink" title="Git查看状态"></a>Git查看状态</h3><pre><code class="java">git status</code></pre>
 <h3 id="Git修改操作"><a href="#Git修改操作" class="headerlink" title="Git修改操作"></a>Git修改操作</h3><p>查看版本历史记录</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">log</span> --pretty=oneline<br></code></pre></td></tr></table></figure>
-
+<pre><code class="bash">  git log --pretty=oneline</code></pre>
 <p>回退到指定版本</p>
-  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java">git reset --hard commit_id  版本号没必要写全，前几位就可以了<br>git reset --hard HEAD~<span class="hljs-number">1</span><br>上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上<span class="hljs-number">100</span>个版本写<span class="hljs-number">100</span>个^比较容易数不过来，所以写成HEAD~<span class="hljs-number">100</span>。<br></code></pre></td></tr></table></figure>
-
+<pre><code class="java">  git reset --hard commit_id  版本号没必要写全，前几位就可以了
+  git reset --hard HEAD~1
+  上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。</code></pre>
 <p>查看Git提交历史命令</p>
-  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">git reflog<br></code></pre></td></tr></table></figure>
+<pre><code class="java">  git reflog</code></pre>
     
     <a class="article-more-a" href="/2020/04/23/git-ming-ling/#more">more >></a>
     
@@ -360,17 +355,15 @@
   <div class="article-entry" itemprop="articleBody">
     
     <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新的文件"><a href="#创建新的文件" class="headerlink" title="创建新的文件"></a>创建新的文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre class=" language-hljs bash">$ hexo new <span class="hljs-string"><code class="language-hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure>
-
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建新的文件"><a href="#创建新的文件" class="headerlink" title="创建新的文件"></a>创建新的文件</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="本地运行服务"><a href="#本地运行服务" class="headerlink" title="本地运行服务"></a>本地运行服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre class=" language-hljs bash"><code class="language-hljs bash">$ hexo s<br>$ hexo server<br></code></pre></td></tr></table></figure>
-
+<h3 id="本地运行服务"><a href="#本地运行服务" class="headerlink" title="本地运行服务"></a>本地运行服务</h3><pre class=" language-bash"><code class="language-bash">$ hexo s
+$ hexo server</code></pre>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre class=" language-hljs bash"><code class="language-hljs bash">$ hexo g<br>$ hexo generate<br></code></pre></td></tr></table></figure>
-
+<h3 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h3><pre class=" language-bash"><code class="language-bash">$ hexo g
+$ hexo generate</code></pre>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="上传到远程仓库"><a href="#上传到远程仓库" class="headerlink" title="上传到远程仓库"></a>上传到远程仓库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre class=" language-hljs bash"><code class="language-hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
+<h3 id="上传到远程仓库"><a href="#上传到远程仓库" class="headerlink" title="上传到远程仓库"></a>上传到远程仓库</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
     
@@ -551,11 +544,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
             
             <div class="clearfix"></div>
@@ -736,6 +729,35 @@
   </div>
 
   
+<script type="text/javascript" src="/plugins/TweenMax/TweenMax.min.js"></script>
+<script type="text/javascript" src="/plugins/TweenMax/HoverImg.js"></script>
+
+<script>
+
+
+  var hoverEffect = {
+    "subNav": ".left-col .social a"
+  }
+
+
+  for (var x in hoverEffect) {
+    // 初始化data-img属性值
+    let $em = document.querySelectorAll(hoverEffect[x]);
+    $em.forEach(($a) => {
+      //console.log($a.href);
+      if (isImageType($a.href)) {
+        $a.setAttribute("data-img", $a.href)
+      }
+    })
+    // 实现悬停元素预览图片效果
+    let $a = document.querySelectorAll(hoverEffect[x] + "[data-img]");
+    $a.forEach(($em) => {
+      new HoverImgFx1($em)
+    })
+  }
+
+</script>
+
   
 <script type="text/javascript" src="/plugins/activate-power-mode/activate-power-mode.js"></script>
 <script>
