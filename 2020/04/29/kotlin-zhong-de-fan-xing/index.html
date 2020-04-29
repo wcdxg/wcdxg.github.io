@@ -18,7 +18,7 @@
 <meta property="og:description" content="泛型 List&lt;TextView&gt; textViews &#x3D; new ArrayList&lt;Button&gt;()&#x2F;&#x2F;会报错 Java 的泛型类型会在编译时发生类型擦除，为了保证类型安全，不允许这样赋值。 Java中的解决方式: List&lt;? extends TextView&gt; textViews &#x3D; new ArrayList&lt;Button&gt;() 其中 ?">
 <meta property="og:locale" content="cn">
 <meta property="article:published_time" content="2020-04-29T10:15:58.000Z">
-<meta property="article:modified_time" content="2020-04-29T10:29:00.956Z">
+<meta property="article:modified_time" content="2020-04-29T10:33:52.277Z">
 <meta property="article:author" content="我吃大西瓜">
 <meta property="article:tag" content="泛型">
 <meta name="twitter:card" content="summary">
@@ -233,7 +233,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">933字</span>
+      <span class="post-count">926字</span>
     </span>
   </span>
 
@@ -329,20 +329,22 @@ val consumer<span class="token operator">:</span> Consumer<span class="token ope
 <span class="token punctuation">}</span></code></pre>
 <p>练习题</p>
 <ul>
-<li>实现一个 fill 函数，传入一个 Array 和一个对象，将对象填充到 Array 中，要求 Array 参数的泛型支持逆变（假设  Array size 为 1）。</li>
-<li>实现一个 copy 函数，传入两个 Array 参数，将一个 Array 中的元素复制到另外个 Array 中，要求 Array 参数的泛型分别支持协变和逆变。（提示：Kotlin 中的 for 循环如果要用索引，需要使用 Array.indices）</li>
-</ul>
-<pre><code>fun &lt;T&gt; fill(array: Array&lt;in T&gt;, t: T) {
-        array[0] = t
-    }
+<li><p>实现一个 fill 函数，传入一个 Array 和一个对象，将对象填充到 Array 中，要求 Array 参数的泛型支持逆变（假设  Array size 为 1）。</p>
+</li>
+<li><p>实现一个 copy 函数，传入两个 Array 参数，将一个 Array 中的元素复制到另外个 Array 中，要求 Array 参数的泛型分别支持协变和逆变。（提示：Kotlin 中的 for 循环如果要用索引，需要使用 Array.indices）</p>
+<pre class=" language-java"><code class="language-java">  fun <span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token function">fill</span><span class="token punctuation">(</span>array<span class="token operator">:</span> Array<span class="token operator">&lt;</span>in T<span class="token operator">></span><span class="token punctuation">,</span> t<span class="token operator">:</span> T<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          array<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> t
+      <span class="token punctuation">}</span>
 
-```java
-fun &lt;T&gt; copy(srcArray: Array&lt;out T&gt;, dstArray: Array&lt;in T&gt;) {
-    srcArray.forEachIndexed { index, t -&gt;
-        dstArray[index] = t
-    }
-}
-```</code></pre>
+  fun <span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token function">copy</span><span class="token punctuation">(</span>srcArray<span class="token operator">:</span> Array<span class="token operator">&lt;</span>out T<span class="token operator">></span><span class="token punctuation">,</span> dstArray<span class="token operator">:</span> Array<span class="token operator">&lt;</span>in T<span class="token operator">></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      srcArray<span class="token punctuation">.</span>forEachIndexed <span class="token punctuation">{</span> index<span class="token punctuation">,</span> t <span class="token operator">-</span><span class="token operator">></span>
+          dstArray<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">=</span> t
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+
     
 
     
@@ -659,19 +661,19 @@ fun &lt;T&gt; copy(srcArray: Array&lt;out T&gt;, dstArray: Array&lt;in T&gt;) {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">动画</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Animator</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ADB</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">dpi</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">动画</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Animator</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -751,11 +753,11 @@ fun &lt;T&gt; copy(srcArray: Array&lt;out T&gt;, dstArray: Array&lt;in T&gt;) {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ViewPager</a>
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+                <a href="javascript:void(0)" class="js-tag color5">ViewPager</a>
               </li>
              
               <li class="article-tag-list-item">
