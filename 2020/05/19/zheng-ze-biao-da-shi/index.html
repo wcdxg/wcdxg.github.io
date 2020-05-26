@@ -447,6 +447,10 @@
                                 <span class="chip bg-color">正则表达式</span>
                             </a>
                         
+                            <a href="/tags/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">Java学习笔记</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -475,21 +479,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-22
+                    2020-05-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    722
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -650,7 +654,23 @@ Matcher m1 <span class="token operator">=</span> p1<span class="token punctuatio
    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"匹配失败"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
    <span class="token punctuation">}</span></code></pre>
-<h3 id="7-非贪婪匹配"><a href="#7-非贪婪匹配" class="headerlink" title="7.非贪婪匹配"></a>7.非贪婪匹配</h3>
+<h3 id="7-非贪婪匹配"><a href="#7-非贪婪匹配" class="headerlink" title="7.非贪婪匹配"></a>7.非贪婪匹配</h3><p>给定一个字符串表示的数字，判断该数字末尾<code>0</code>的个数。可以很容易地写出该正则表达式：<code>(\d+)(0*)</code></p>
+<ul>
+<li><p><code>&quot;123000&quot;</code>：3个<code>0</code>  期望结果: <code>123</code> <code>000</code>  实际结果:<code>&quot;123000&quot;</code> <code>&quot;&quot;</code></p>
+</li>
+<li><p><code>&quot;10100&quot;</code>：2个<code>0</code>    期望结果: <code>101</code> <code>00</code>     实际结果:<code>&quot;10100&quot;</code> <code>&quot;&quot;</code></p>
+</li>
+<li><p><code>&quot;1001&quot;</code>：0个<code>0</code>      期望结果: <code>1001</code> <code>&quot;&quot;</code>   实际结果:<code>&quot;1001&quot;</code> <code>&quot;&quot;</code></p>
+</li>
+</ul>
+<p>这是因为正则表达式默认使用贪婪匹配：任何一个规则，它总是尽可能多地向后匹配，因此，<code>\d+</code>总是会把后面的<code>0</code>包含进来。</p>
+<p>要让<code>\d+</code>尽量少匹配，让<code>0*</code>尽量多匹配，我们就必须让<code>\d+</code>使用非贪婪匹配。在规则<code>\d+</code>后面加个<code>?</code>即可表示非贪婪匹配。</p>
+<p>改写正则表达式如下<code>(\d+?)(0*)&quot;</code>   因此，给定一个匹配规则，加上<code>?</code>后就变成了非贪婪匹配。</p>
+<p>我们再来看这个正则表达式<code>(\d??)(9*)</code>，注意<code>\d?</code>表示匹配0个或1个数字，后面第二个<code>?</code>表示非贪婪匹配，因此，给定字符串<code>&quot;9999&quot;</code>，匹配到的两个子串分别是<code>&quot;&quot;</code>和<code>&quot;9999&quot;</code>，因为对于<code>\d?</code>来说，可以匹配1个<code>9</code>，也可以匹配0个<code>9</code>，但是因为后面的<code>?</code>表示非贪婪匹配，它就会尽可能少的匹配，结果是匹配了0个<code>9</code>。</p>
+<h3 id="8-搜索和替换"><a href="#8-搜索和替换" class="headerlink" title="8.搜索和替换"></a>8.搜索和替换</h3><h4 id="8-1-分割字符串"><a href="#8-1-分割字符串" class="headerlink" title="8.1 分割字符串"></a>8.1 分割字符串</h4><pre class=" language-java"><code class="language-java">System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token string">"a b c"</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"\\s"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//[a, b, c]</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token string">"a b  c"</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"\\s"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//[a, b, "", c]</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token string">"a,b ;; c"</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"[\\,\\s\\;]+"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//[a, b, c]</span></code></pre>
+<h4 id="8-2-搜索字符串"><a href="#8-2-搜索字符串" class="headerlink" title="8.2 搜索字符串"></a>8.2 搜索字符串</h4>
             </div>
             <hr/>
 
@@ -715,6 +735,10 @@ Matcher m1 <span class="token operator">=</span> p1<span class="token punctuatio
                             
                                 <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
                                     <span class="chip bg-color">正则表达式</span>
+                                </a>
+                            
+                                <a href="/tags/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">Java学习笔记</span>
                                 </a>
                             
                         </div>
@@ -1092,6 +1116,10 @@ a，b，&amp;，0
                     
                     <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
                         <span class="chip bg-color">正则表达式</span>
+                    </a>
+                    
+                    <a href="/tags/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">Java学习笔记</span>
                     </a>
                     
                 </div>
