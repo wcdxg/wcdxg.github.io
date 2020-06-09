@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Android模拟器启动报错：Cannot find AVD system path. Please define ANDROID_SDK_ROOT</title>
+      <link href="/2020/06/09/29.android-mo-ni-qi-qi-dong-bao-cuo-cannot-find-avd-system-path-please-define-android-sdk-root/"/>
+      <url>/2020/06/09/29.android-mo-ni-qi-qi-dong-bao-cuo-cannot-find-avd-system-path-please-define-android-sdk-root/</url>
+      
+        <content type="html"><![CDATA[<p>今天在重装系统安装AS之后发现模拟器无法启动，提示这样一个错误：<br><code>Cannot find AVD system path. Please define ANDROID_SDK_ROOT</code></p><p>按照网上的方法设置AVD_HOME，开启VT等均无法解决，后来发现是由于中文用户名导致的，参照教程更改Windows中文用户名为英文后，删除C:\User\xxx.android\avd目录，重启AS，新建模拟器就可以正常启动了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Android </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Android Studio </tag>
+            
+            <tag> Android模拟器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Kotlin使用接口回调</title>
       <link href="/2020/06/02/14.kotlin-jie-kou-hui-diao/"/>
       <url>/2020/06/02/14.kotlin-jie-kou-hui-diao/</url>
