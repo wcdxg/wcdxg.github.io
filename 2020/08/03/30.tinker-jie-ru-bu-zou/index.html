@@ -627,7 +627,7 @@ tinkerPatch <span class="token punctuation">{</span>
 # tinker混淆规则
 <span class="token operator">-</span>dontwarn com<span class="token punctuation">.</span>tencent<span class="token punctuation">.</span>tinker<span class="token punctuation">.</span>*<span class="token operator">*</span>
 <span class="token operator">-</span>keep <span class="token keyword">class</span> <span class="token class-name">com<span class="token punctuation">.</span>tencent<span class="token punctuation">.</span>tinker<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token operator">*</span> <span class="token punctuation">{</span> <span class="token operator">*</span><span class="token punctuation">;</span> <span class="token punctuation">}</span></code></pre>
-<h4 id="5-初始化SDK"><a href="#5-初始化SDK" class="headerlink" title="5.初始化SDK"></a>5.初始化SDK</h4><h5 id="5-1-enableProxyApplication-false-的情况"><a href="#5-1-enableProxyApplication-false-的情况" class="headerlink" title="5.1 enableProxyApplication = false 的情况"></a>5.1 enableProxyApplication = false 的情况</h5><p>*<em>自定义Application *</em>  xxx.xxx.SampleApplicationLike 修改为自己的包名对应位置的SampleApplicationLike</p>
+<h4 id="5-初始化SDK"><a href="#5-初始化SDK" class="headerlink" title="5.初始化SDK"></a>5.初始化SDK</h4><h5 id="5-1-enableProxyApplication-false-的情况"><a href="#5-1-enableProxyApplication-false-的情况" class="headerlink" title="5.1 enableProxyApplication = false 的情况"></a>5.1 enableProxyApplication = false 的情况</h5><p><strong>自定义Application</strong>  xxx.xxx.SampleApplicationLike 修改为自己的包名对应位置的SampleApplicationLike</p>
 <pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SampleApplication</span> <span class="token keyword">extends</span> <span class="token class-name">TinkerApplication</span> <span class="token punctuation">{</span>
     <span class="token keyword">public</span> <span class="token function">SampleApplication</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">super</span><span class="token punctuation">(</span>ShareConstants<span class="token punctuation">.</span>TINKER_ENABLE_ALL<span class="token punctuation">,</span> <span class="token string">"xxx.xxx.SampleApplicationLike"</span><span class="token punctuation">,</span>
@@ -675,7 +675,7 @@ tinkerPatch <span class="token punctuation">{</span>
 
 <span class="token punctuation">}</span></code></pre>
 <blockquote>
-<p>tinker需要你开启MultiDex,Android 21以上自带MultiDex 在app module下的``build.gradle<code>-</code>defaultConfig<code>下添加</code>multiDexEnabled true`</p>
+<p>tinker需要你开启MultiDex,Android 21以上自带MultiDex 在app module下的<code>build.gradle</code> - <code>defaultConfig</code>下添加<code>multiDexEnabled true</code></p>
 </blockquote>
 <h5 id="5-2-enableProxyApplication-true-的情况"><a href="#5-2-enableProxyApplication-true-的情况" class="headerlink" title="5.2 enableProxyApplication = true 的情况"></a>5.2 enableProxyApplication = true 的情况</h5><pre class=" language-java"><code class="language-java">
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyApplication</span> <span class="token keyword">extends</span> <span class="token class-name">Application</span> <span class="token punctuation">{</span>
@@ -739,7 +739,7 @@ android<span class="token punctuation">.</span>enableJetifier<span class="token 
 <pre class=" language-java"><code class="language-java">classpath <span class="token string">"com.android.tools.build:gradle:3.5.3"</span></code></pre>
 </blockquote>
 <h4 id="5-加固版本生成基准包步骤-先在官网确认bugly支持的加固产品和版本"><a href="#5-加固版本生成基准包步骤-先在官网确认bugly支持的加固产品和版本" class="headerlink" title="5.加固版本生成基准包步骤,先在官网确认bugly支持的加固产品和版本"></a>5.加固版本生成基准包步骤,先在官网确认bugly支持的<a href="https://bugly.qq.com/docs/user-guide/instruction-manual-android-hotfix-demo/?v=20200622202242#1isprotectedapp" target="_blank" rel="noopener">加固产品和版本</a></h4><ul>
-<li><p>5.1 打补丁包时<strong>tinker-support</strong>中``isProtectedApp = true`需要打开</p>
+<li><p>5.1 打补丁包时<strong>tinker-support</strong>中<code>isProtectedApp = true</code>需要打开</p>
 </li>
 <li><p>5.2 <strong>tinker-support</strong> 填写加固前的基准包目录,生成补丁包上传到bugly</p>
 </li>
