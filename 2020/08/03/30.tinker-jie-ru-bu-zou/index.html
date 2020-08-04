@@ -479,14 +479,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-08-03
+                    2020-08-04
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.8k
+                    1.9k
                 </div>
                 
 
@@ -503,7 +503,8 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="一-接入步骤-TinkerSupport和tinker插件的对应关系在Bugly官网-更新日志页面查询"><a href="#一-接入步骤-TinkerSupport和tinker插件的对应关系在Bugly官网-更新日志页面查询" class="headerlink" title="一.接入步骤,TinkerSupport和tinker插件的对应关系在Bugly官网 更新日志页面查询"></a>一.接入步骤,TinkerSupport和tinker插件的对应关系在<a href="https://bugly.qq.com/docs/release-notes/release-android-beta/?v=20200622202242" target="_blank" rel="noopener">Bugly官网</a> 更新日志页面查询</h3><h4 id="1-项目根目录build-gradle添加依赖"><a href="#1-项目根目录build-gradle添加依赖" class="headerlink" title="1. 项目根目录build.gradle添加依赖"></a>1. 项目根目录<code>build.gradle</code>添加依赖</h4><pre class=" language-java"><code class="language-java">  <span class="token comment" spellcheck="true">//tinkersupport</span>
+                <p>最近项目中需要接入热更新,在接入Bugly Tinker过程中遇到了很多问题,在此记录下,同时建议如果APP用户量不是非常大的还是接入阿里的Sophix吧,每月5万台设备免费,而且问题也没有这么多…</p>
+<h3 id="一-接入步骤-TinkerSupport和tinker插件的对应关系在Bugly官网-更新日志页面查询"><a href="#一-接入步骤-TinkerSupport和tinker插件的对应关系在Bugly官网-更新日志页面查询" class="headerlink" title="一.接入步骤,TinkerSupport和tinker插件的对应关系在Bugly官网 更新日志页面查询"></a>一.接入步骤,TinkerSupport和tinker插件的对应关系在<a href="https://bugly.qq.com/docs/release-notes/release-android-beta/?v=20200622202242" target="_blank" rel="noopener">Bugly官网</a> 更新日志页面查询</h3><h4 id="1-项目根目录build-gradle添加依赖"><a href="#1-项目根目录build-gradle添加依赖" class="headerlink" title="1. 项目根目录build.gradle添加依赖"></a>1. 项目根目录<code>build.gradle</code>添加依赖</h4><pre class=" language-java"><code class="language-java">  <span class="token comment" spellcheck="true">//tinkersupport</span>
   classpath <span class="token string">"com.tencent.bugly:tinker-support:1.2.0"</span></code></pre>
 <h4 id="2-app-module下的build-gradle添加插件依赖"><a href="#2-app-module下的build-gradle添加插件依赖" class="headerlink" title="2. app module下的build.gradle添加插件依赖"></a>2. app module下的<code>build.gradle</code>添加插件依赖</h4><pre class=" language-java"><code class="language-java">  android <span class="token punctuation">{</span>
         defaultConfig <span class="token punctuation">{</span>
@@ -738,7 +739,14 @@ android<span class="token punctuation">.</span>enableJetifier<span class="token 
 <p>2.修改项目根目录下的<code>build.gradle</code>中gradle依赖版本为</p>
 <pre class=" language-java"><code class="language-java">classpath <span class="token string">"com.android.tools.build:gradle:3.5.3"</span></code></pre>
 </blockquote>
-<h4 id="5-加固版本生成基准包步骤-先在官网确认bugly支持的加固产品和版本"><a href="#5-加固版本生成基准包步骤-先在官网确认bugly支持的加固产品和版本" class="headerlink" title="5.加固版本生成基准包步骤,先在官网确认bugly支持的加固产品和版本"></a>5.加固版本生成基准包步骤,先在官网确认bugly支持的<a href="https://bugly.qq.com/docs/user-guide/instruction-manual-android-hotfix-demo/?v=20200622202242#1isprotectedapp" target="_blank" rel="noopener">加固产品和版本</a></h4><ul>
+<h4 id="5-警告Warning-ignoreWarning-is-false-but-we-found-loader-classes-are-found-in-old-secondary-dex-Found-classes-Lcom-tencent-tinker-loader-R"><a href="#5-警告Warning-ignoreWarning-is-false-but-we-found-loader-classes-are-found-in-old-secondary-dex-Found-classes-Lcom-tencent-tinker-loader-R" class="headerlink" title="5. 警告Warning:ignoreWarning is false, but we found loader classes are found in old secondary dex. Found classes: {Lcom/tencent/tinker/loader/R;}"></a>5. 警告Warning:ignoreWarning is false, but we found loader classes are found in old secondary dex. Found classes: {Lcom/tencent/tinker/loader/R;}</h4><p>降低<code>minSdkVersion</code>版本到21有效解决</p>
+<pre><code>defaultConfig {
+        applicationId &quot;xxx&quot;
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName &quot;1&quot;
+}</code></pre><h4 id="6-加固版本生成基准包步骤-先在官网确认bugly支持的加固产品和版本"><a href="#6-加固版本生成基准包步骤-先在官网确认bugly支持的加固产品和版本" class="headerlink" title="6.加固版本生成基准包步骤,先在官网确认bugly支持的加固产品和版本"></a>6.加固版本生成基准包步骤,先在官网确认bugly支持的<a href="https://bugly.qq.com/docs/user-guide/instruction-manual-android-hotfix-demo/?v=20200622202242#1isprotectedapp" target="_blank" rel="noopener">加固产品和版本</a></h4><ul>
 <li><p>5.1 打补丁包时<strong>tinker-support</strong>中<code>isProtectedApp = true</code>需要打开</p>
 </li>
 <li><p>5.2 <strong>tinker-support</strong> 填写加固前的基准包目录,生成补丁包上传到bugly</p>
@@ -1134,8 +1142,8 @@ android<span class="token punctuation">.</span>enableJetifier<span class="token 
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一.接入步骤,TinkerSupport和tinker插件的对应关系在Bugly官网 更新日志页面查询1. 项目根目录build.gradle添加依赖  //tinkersupport
-  classpath "com.tencent.bu
+                            最近项目中需要接入热更新,在接入Bugly Tinker过程中遇到了很多问题,在此记录下,同时建议如果APP用户量不是非常大的还是接入阿里的Sophix吧,每月5万台设备免费,而且问题也没有这么多…
+一.接入步骤,TinkerSupport
                         
                     </div>
                     <div class="publish-info">
@@ -1212,12 +1220,12 @@ android<span class="token punctuation">.</span>enableJetifier<span class="token 
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Android%E6%A8%A1%E6%8B%9F%E5%99%A8/">
-                        <span class="chip bg-color">Android模拟器</span>
-                    </a>
-                    
                     <a href="/tags/Android-Studio/">
                         <span class="chip bg-color">Android Studio</span>
+                    </a>
+                    
+                    <a href="/tags/Android%E6%A8%A1%E6%8B%9F%E5%99%A8/">
+                        <span class="chip bg-color">Android模拟器</span>
                     </a>
                     
                 </div>
