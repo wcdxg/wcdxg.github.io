@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>PhotoView缩放后的坐标转换</title>
+      <title>Android PhotoView缩放后的坐标转换</title>
       <link href="/2020/11/06/photoview-zuo-biao-zhuan-huan/"/>
       <url>/2020/11/06/photoview-zuo-biao-zhuan-huan/</url>
       
@@ -99,9 +99,9 @@
       
         <tags>
             
-            <tag> Android Studio </tag>
-            
             <tag> Android模拟器 </tag>
+            
+            <tag> Android Studio </tag>
             
         </tags>
       
