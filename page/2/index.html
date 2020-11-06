@@ -339,7 +339,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/3.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/5.jpg)');
 </script>
 
 
@@ -356,6 +356,58 @@
     <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
         <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/04/29/2.android-rxjava-de-shi-yong/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Android RxJava的使用">
+                            
+                            <span class="card-title">Android RxJava的使用</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                代码示例//创建一个上游 Observable：
+        Observable&lt;Integer> observable = Observable.create(new ObservableOnSubscribe&lt;Inte
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-29
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Android/" class="post-category">
+                                    Android
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/RxJava/">
+                            <span class="chip bg-color">RxJava</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%95%99%E7%A8%8B/">
+                            <span class="chip bg-color">教程</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
@@ -812,16 +864,16 @@ Error:Unable to resolve dependency for ':app@Ap
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E5%BC%82%E5%B8%B8%E9%97%AE%E9%A2%98/">
-                            <span class="chip bg-color">异常问题</span>
-                        </a>
-                        
                         <a href="/tags/Selector/">
                             <span class="chip bg-color">Selector</span>
                         </a>
                         
                         <a href="/tags/%E5%9B%BE%E7%89%87%E9%80%89%E6%8B%A9%E5%99%A8/">
                             <span class="chip bg-color">图片选择器</span>
+                        </a>
+                        
+                        <a href="/tags/%E5%BC%82%E5%B8%B8%E9%97%AE%E9%A2%98/">
+                            <span class="chip bg-color">异常问题</span>
                         </a>
                         
                     </div>
@@ -930,61 +982,6 @@ buildscript {
                         
                         <a href="/tags/%E8%87%AA%E5%90%AF%E5%8A%A8/">
                             <span class="chip bg-color">自启动</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/04/29/23.rgb-yan-se-shen-qian-pai-xu/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="RGB颜色深浅排序">
-                            
-                            <span class="card-title">RGB颜色深浅排序</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                最近由于项目需要,需要对后台传递过来的十六进制的RGB,按照颜色由浅至深进行排序.参考此链接RGB排序，通过将RGB 模式转换成YUK模式，而 Y 是明亮度（灰阶），因此只需要获得 Y 的值而判断他是否足够亮就可以了,当和大于等于此值就为浅
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/Color/">
-                            <span class="chip bg-color">Color</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%8E%92%E5%BA%8F/">
-                            <span class="chip bg-color">排序</span>
-                        </a>
-                        
-                        <a href="/tags/RGB/">
-                            <span class="chip bg-color">RGB</span>
                         </a>
                         
                     </div>
