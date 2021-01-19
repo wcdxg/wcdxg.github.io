@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>阿里云Maven jcenter地址</title>
+      <link href="/2021/01/19/a-li-yun-maven-jcenter-cang-ku-di-zhi/"/>
+      <url>/2021/01/19/a-li-yun-maven-jcenter-cang-ku-di-zhi/</url>
+      
+        <content type="html"><![CDATA[<p>添加到IDEA 提升依赖下载速度</p><pre class=" language-groovy"><code class="language-groovy">repositories <span class="token punctuation">{</span>        maven <span class="token punctuation">{</span> url <span class="token string">'http://maven.aliyun.com/nexus/content/groups/public/'</span> <span class="token punctuation">}</span>        maven <span class="token punctuation">{</span> url <span class="token string">'http://maven.aliyun.com/nexus/content/repositories/jcenter'</span> <span class="token punctuation">}</span>        maven <span class="token punctuation">{</span> url <span class="token string">'http://maven.aliyun.com/nexus/content/repositories/google'</span> <span class="token punctuation">}</span>        maven <span class="token punctuation">{</span> url <span class="token string">'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin'</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Android Studio </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Android Studio </tag>
+            
+            <tag> Maven </tag>
+            
+            <tag> jcenter </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Android PhotoView缩放后的坐标转换</title>
       <link href="/2020/11/06/photoview-zuo-biao-zhuan-huan/"/>
       <url>/2020/11/06/photoview-zuo-biao-zhuan-huan/</url>
