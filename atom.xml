@@ -451,9 +451,9 @@ public class MyGridView extends GridView {
       <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
     
     
-      <category term="GridView" scheme="https://yuaihen.github.io/tags/GridView/"/>
-    
       <category term="RecyclerView" scheme="https://yuaihen.github.io/tags/RecyclerView/"/>
+    
+      <category term="GridView" scheme="https://yuaihen.github.io/tags/GridView/"/>
     
       <category term="滑动冲突" scheme="https://yuaihen.github.io/tags/%E6%BB%91%E5%8A%A8%E5%86%B2%E7%AA%81/"/>
     
