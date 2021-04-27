@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Fragment的嵌套和切换代码, 我吃大西瓜QAQ的破站">
+    <meta name="keywords" content="Fragment的嵌套和切换代码, 我吃大西瓜QAQ的小破站">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Fragment的嵌套和切换代码 | 我吃大西瓜QAQ的破站</title>
+    <title>Fragment的嵌套和切换代码 | 我吃大西瓜QAQ的小破站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="我吃大西瓜QAQ的破站" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="我吃大西瓜QAQ的小破站" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -42,7 +42,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">我吃大西瓜QAQ的破站</span>
+                    <span class="logo-span">我吃大西瓜QAQ的小破站</span>
                 </a>
             </div>
             
@@ -141,7 +141,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">我吃大西瓜QAQ的破站</div>
+        <div class="logo-name">我吃大西瓜QAQ的小破站</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -483,7 +483,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    158
+                    198
                 </div>
                 
 
@@ -501,49 +501,52 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>在Activity中获取到FragmentManager</p>
-<pre class=" language-java"><code class="language-java">mFragmentManager <span class="token operator">=</span> <span class="token function">getSupportFragmentManager</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<pre class=" language-java"><code class="language-java">mFragmentManager <span class="token operator">=</span> <span class="token function">getSupportFragmentManager</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 <p>添加或者切换Fragment</p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">addView</span><span class="token punctuation">(</span>BaseFragment fragment<span class="token punctuation">,</span> String tag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">addView</span><span class="token punctuation">(</span>BaseFragment fragment<span class="token punctuation">,</span> String tag<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         mFragmentTransaction <span class="token operator">=</span> mFragmentManager<span class="token punctuation">.</span><span class="token function">beginTransaction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">//优先检查，fragment是否存在，避免重叠</span>
         BaseFragment tempFragment <span class="token operator">=</span> <span class="token punctuation">(</span>BaseFragment<span class="token punctuation">)</span> mFragmentManager<span class="token punctuation">.</span><span class="token function">findFragmentByTag</span><span class="token punctuation">(</span>tag<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>tempFragment <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>tempFragment <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             fragment <span class="token operator">=</span> tempFragment<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>fragment<span class="token punctuation">.</span><span class="token function">isAdded</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>fragment<span class="token punctuation">.</span><span class="token function">isAdded</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token function">addOrShowFragment</span><span class="token punctuation">(</span>fragment<span class="token punctuation">,</span> tag<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-            <span class="token keyword">if</span> <span class="token punctuation">(</span>currentFragment <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> currentFragment<span class="token punctuation">.</span><span class="token function">isAdded</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>currentFragment <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> currentFragment<span class="token punctuation">.</span><span class="token function">isAdded</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                 mFragmentTransaction<span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span>currentFragment<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>id<span class="token punctuation">.</span>fl_container<span class="token punctuation">,</span> fragment<span class="token punctuation">,</span> tag<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">commitAllowingStateLoss</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                 mFragmentTransaction<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>id<span class="token punctuation">.</span>fl_container<span class="token punctuation">,</span> fragment<span class="token punctuation">,</span> tag<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">commitAllowingStateLoss</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
             currentFragment <span class="token operator">=</span> fragment<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span></code></pre>
-<a id="more"></a>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<span id="more"></span>
 
 <pre class=" language-java"><code class="language-java"> <span class="token comment" spellcheck="true">/**
      * 添加或者显示 fragment
      *
      * @param fragment
      */</span>
-    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">addOrShowFragment</span><span class="token punctuation">(</span>BaseFragment fragment<span class="token punctuation">,</span> String tag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>currentFragment <span class="token operator">==</span> fragment <span class="token operator">||</span> mFragmentManager <span class="token operator">==</span> null <span class="token operator">||</span> currentFragment <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">void</span> <span class="token function">addOrShowFragment</span><span class="token punctuation">(</span>BaseFragment fragment<span class="token punctuation">,</span> String tag<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>currentFragment <span class="token operator">==</span> fragment <span class="token operator">||</span> mFragmentManager <span class="token operator">==</span> null <span class="token operator">||</span> currentFragment <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token keyword">return</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// 如果当前fragment未被添加，则添加到Fragment管理器中</span>
         FragmentTransaction transaction <span class="token operator">=</span> mFragmentManager<span class="token punctuation">.</span><span class="token function">beginTransaction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>fragment<span class="token punctuation">.</span><span class="token function">isAdded</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>fragment<span class="token punctuation">.</span><span class="token function">isAdded</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             transaction<span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span>currentFragment<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>id<span class="token punctuation">.</span>fl_container<span class="token punctuation">,</span> fragment<span class="token punctuation">,</span> tag<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">commitAllowingStateLoss</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             transaction<span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span>currentFragment<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span>fragment<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">commitAllowingStateLoss</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 
         currentFragment<span class="token punctuation">.</span><span class="token function">setUserVisibleHint</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         currentFragment <span class="token operator">=</span> fragment<span class="token punctuation">;</span>
         currentFragment<span class="token punctuation">.</span><span class="token function">setUserVisibleHint</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span></code></pre>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
 
             </div>
             <hr/>
@@ -1050,7 +1053,7 @@ CoordinatorLayout嵌套AppBarLayout，滚动的头部都应该放在AppBarLayout
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 我吃大西瓜QAQ的破站<br />'
+            + '来源: 我吃大西瓜QAQ的小破站<br />'
             + '文章作者: 我吃大西瓜<br />'
             + '文章链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';

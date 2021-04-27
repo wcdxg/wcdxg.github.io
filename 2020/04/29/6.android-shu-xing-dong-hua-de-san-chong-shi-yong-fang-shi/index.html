@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Android属性动画的三种使用方式, 我吃大西瓜QAQ的破站">
+    <meta name="keywords" content="Android属性动画的三种使用方式, 我吃大西瓜QAQ的小破站">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Android属性动画的三种使用方式 | 我吃大西瓜QAQ的破站</title>
+    <title>Android属性动画的三种使用方式 | 我吃大西瓜QAQ的小破站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="我吃大西瓜QAQ的破站" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="我吃大西瓜QAQ的小破站" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -42,7 +42,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">我吃大西瓜QAQ的破站</span>
+                    <span class="logo-span">我吃大西瓜QAQ的小破站</span>
                 </a>
             </div>
             
@@ -141,7 +141,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">我吃大西瓜QAQ的破站</div>
+        <div class="logo-name">我吃大西瓜QAQ的小破站</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -491,7 +491,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    601
+                    609
                 </div>
                 
 
@@ -514,7 +514,8 @@
 <span class="token punctuation">.</span><span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
 <span class="token punctuation">.</span><span class="token function">translationX</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">)</span>
 <span class="token punctuation">.</span><span class="token function">setDuration</span><span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">)</span>
-<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 <h3 id="第二种：ObjectAnimator"><a href="#第二种：ObjectAnimator" class="headerlink" title="第二种：ObjectAnimator"></a>第二种：ObjectAnimator</h3><p>继承自<code>ValueAnimator</code><br>实际上是通过调用view里面的<code>setter()</code>方法来更新参数值，例如下面的alpha实际上是调用的view里面的setAlpha()方法来更新值</p>
 <h5 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h5><h6 id="旋转-rotation、rotationX、rotationY"><a href="#旋转-rotation、rotationX、rotationY" class="headerlink" title="旋转 rotation、rotationX、rotationY"></a>旋转 <code>rotation</code>、<code>rotationX</code>、<code>rotationY</code></h6><ul>
 <li>rotationX：表示围绕 X 轴旋转，rotationX 表示旋转度数</li>
@@ -529,8 +530,9 @@
 </ul>
 <pre class=" language-java"><code class="language-java">ObjectAnimator animator <span class="token operator">=</span> ObjectAnimator<span class="token punctuation">.</span><span class="token function">ofFloat</span><span class="token punctuation">(</span>view<span class="token punctuation">,</span><span class="token string">"alpha"</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 animator<span class="token punctuation">.</span><span class="token function">setDuration</span><span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
-animator<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> </code></pre>
-<a id="more"></a>
+animator<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+</code></pre>
+<span id="more"></span>
 
 <h3 id="第三种方式：-ValueAnimator"><a href="#第三种方式：-ValueAnimator" class="headerlink" title="第三种方式： ValueAnimator"></a>第三种方式： ValueAnimator</h3><ul>
 <li>ValueAnimator 是 ObjectAnimator 的父类，实际上，ValueAnimator 就是一个不能指定目标对象版本的 ObjectAnimator。</li>
@@ -540,13 +542,13 @@ animator<span class="token punctuation">.</span><span class="token function">sta
 <pre class=" language-java"><code class="language-java">ValueAnimator animator <span class="token operator">=</span> ValueAnimator<span class="token punctuation">.</span><span class="token function">ofInt</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">400</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//创建一个值从0到400的动画</span>
 animator<span class="token punctuation">.</span><span class="token function">setDuration</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//动画时长为1s</span>
 
-animator<span class="token punctuation">.</span><span class="token function">addUpdateListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ValueAnimator<span class="token punctuation">.</span>AnimatorUpdateListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+animator<span class="token punctuation">.</span><span class="token function">addUpdateListener</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ValueAnimator<span class="token punctuation">.</span>AnimatorUpdateListener</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token annotation punctuation">@Override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onAnimationUpdate</span><span class="token punctuation">(</span>ValueAnimator animation<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">onAnimationUpdate</span><span class="token punctuation">(</span>ValueAnimator animation<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         <span class="token keyword">int</span> curValue <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>animation<span class="token punctuation">.</span><span class="token function">getAnimatedValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         tv<span class="token punctuation">.</span><span class="token function">layout</span><span class="token punctuation">(</span>curValue<span class="token punctuation">,</span>curValue<span class="token punctuation">,</span>curValue<span class="token operator">+</span>tv<span class="token punctuation">.</span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>curValue<span class="token operator">+</span>tv<span class="token punctuation">.</span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="三种方式的区别："><a href="#三种方式的区别：" class="headerlink" title="三种方式的区别："></a>三种方式的区别：</h3><ul>
 <li>ViewPropertyAnimator、ObjectAnimator、ValueAnimator 这三种 Animator，它们其实是一种递进的关系：从左到右依次变得更加难用，也更加灵活。</li>
@@ -1059,7 +1061,7 @@ animator<span class="token punctuation">.</span><span class="token function">add
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 我吃大西瓜QAQ的破站<br />'
+            + '来源: 我吃大西瓜QAQ的小破站<br />'
             + '文章作者: 我吃大西瓜<br />'
             + '文章链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';

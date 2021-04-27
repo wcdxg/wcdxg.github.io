@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Recyclerview 嵌套滑动冲突和非嵌套去除滑动效果的完美解决方案, 我吃大西瓜QAQ的破站">
+    <meta name="keywords" content="Recyclerview 嵌套滑动冲突和非嵌套去除滑动效果的完美解决方案, 我吃大西瓜QAQ的小破站">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Recyclerview 嵌套滑动冲突和非嵌套去除滑动效果的完美解决方案 | 我吃大西瓜QAQ的破站</title>
+    <title>Recyclerview 嵌套滑动冲突和非嵌套去除滑动效果的完美解决方案 | 我吃大西瓜QAQ的小破站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="我吃大西瓜QAQ的破站" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="我吃大西瓜QAQ的小破站" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -42,7 +42,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">我吃大西瓜QAQ的破站</span>
+                    <span class="logo-span">我吃大西瓜QAQ的小破站</span>
                 </a>
             </div>
             
@@ -141,7 +141,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">我吃大西瓜QAQ的破站</div>
+        <div class="logo-name">我吃大西瓜QAQ的小破站</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -487,7 +487,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    332
+                    340
                 </div>
                 
 
@@ -517,34 +517,37 @@
             android<span class="token operator">:</span>overScrollMode<span class="token operator">=</span><span class="token string">"never"</span>
             android<span class="token operator">:</span>scrollbars<span class="token operator">=</span><span class="token string">"none"</span> <span class="token operator">/</span><span class="token operator">></span>
 
-<span class="token operator">&lt;</span><span class="token operator">/</span>LinearLayout<span class="token operator">></span></code></pre>
+<span class="token operator">&lt;</span><span class="token operator">/</span>LinearLayout<span class="token operator">></span>
+</code></pre>
 <p>第二种方案 ：用 NestedScrollView 来替换 ScrollView</p>
 <pre class=" language-java"><code class="language-java"><span class="token operator">&lt;</span>android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v4<span class="token punctuation">.</span>widget<span class="token punctuation">.</span>NestedScrollView
     android<span class="token operator">:</span>layout_width<span class="token operator">=</span><span class="token string">"match_parent"</span>
     android<span class="token operator">:</span>layout_height<span class="token operator">=</span><span class="token string">"match_parent"</span><span class="token operator">></span>
-
+    
     <span class="token operator">&lt;</span>LinearLayout
         android<span class="token operator">:</span>layout_width<span class="token operator">=</span><span class="token string">"match_parent"</span>
         android<span class="token operator">:</span>layout_height<span class="token operator">=</span><span class="token string">"match_parent"</span>
         android<span class="token operator">:</span>orientation<span class="token operator">=</span><span class="token string">"vertical"</span><span class="token operator">></span>
-
+        
         <span class="token operator">&lt;</span>android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v7<span class="token punctuation">.</span>widget<span class="token punctuation">.</span>RecyclerView
             android<span class="token operator">:</span>id<span class="token operator">=</span><span class="token string">"@+id/recyclerView"</span>
             android<span class="token operator">:</span>layout_width<span class="token operator">=</span><span class="token string">"match_parent"</span>
             android<span class="token operator">:</span>layout_height<span class="token operator">=</span><span class="token string">"wrap_content"</span> <span class="token operator">/</span><span class="token operator">></span>
-
+            
     <span class="token operator">&lt;</span><span class="token operator">/</span>LinearLayout<span class="token operator">></span>
-
-<span class="token operator">&lt;</span><span class="token operator">/</span>android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v4<span class="token punctuation">.</span>widget<span class="token punctuation">.</span>NestedScrollView<span class="token operator">></span></code></pre>
+    
+<span class="token operator">&lt;</span><span class="token operator">/</span>android<span class="token punctuation">.</span>support<span class="token punctuation">.</span>v4<span class="token punctuation">.</span>widget<span class="token punctuation">.</span>NestedScrollView<span class="token operator">></span>
+</code></pre>
 <p>但是第二种方案还是会出现滑动卡顿问题，这时只需要禁止 RecyclerView 的滑动即可，<br>通过在 xml 中给 RecyclerView 添加 <strong>android:nestedScrollingEnabled=”false”</strong><br>或者 直接在代码中设置  <strong>recyclerView.setNestedScrollingEnabled(false);</strong></p>
 <p>也可结合方案三使用<br>第三种方案：重写LinearLayoutManager的 canScrollVertically 方法从而禁止滑动 ，代码如下</p>
-<pre class=" language-java"><code class="language-java">recyclerView<span class="token punctuation">.</span><span class="token function">setLayoutManager</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">LinearLayoutManager</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<pre class=" language-java"><code class="language-java">recyclerView<span class="token punctuation">.</span><span class="token function">setLayoutManager</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">LinearLayoutManager</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token annotation punctuation">@Override</span>
-            <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">canScrollVertically</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">canScrollVertically</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
                 <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<p>版权声明：本文为CSDN博主「浮生未歇_」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/w13576267399/article/details/86238822" target="_blank" rel="noopener">https://blog.csdn.net/w13576267399/article/details/86238822</a></p>
+            <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>版权声明：本文为CSDN博主「浮生未歇_」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/w13576267399/article/details/86238822">https://blog.csdn.net/w13576267399/article/details/86238822</a></p>
 
             </div>
             <hr/>
@@ -936,9 +939,10 @@
                         
                             泛型
 List&lt;TextView> textViews = new ArrayList&lt;Button>()//会报错
+
 Java 的泛型类型会在编译时发生类型擦除，为了保证类型安全，不允许这样赋值。
 Java中的解决方式:
-Lis
+Li
                         
                     </div>
                     <div class="publish-info">
@@ -1053,7 +1057,7 @@ PagerSnapHelp
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 我吃大西瓜QAQ的破站<br />'
+            + '来源: 我吃大西瓜QAQ的小破站<br />'
             + '文章作者: 我吃大西瓜<br />'
             + '文章链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';

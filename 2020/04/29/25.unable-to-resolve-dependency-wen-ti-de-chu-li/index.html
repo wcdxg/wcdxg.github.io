@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Unable-to-resolve-dependency问题的处理, 我吃大西瓜QAQ的破站">
+    <meta name="keywords" content="Unable-to-resolve-dependency问题的处理, 我吃大西瓜QAQ的小破站">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Unable-to-resolve-dependency问题的处理 | 我吃大西瓜QAQ的破站</title>
+    <title>Unable-to-resolve-dependency问题的处理 | 我吃大西瓜QAQ的小破站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="我吃大西瓜QAQ的破站" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="我吃大西瓜QAQ的小破站" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -42,7 +42,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">我吃大西瓜QAQ的破站</span>
+                    <span class="logo-span">我吃大西瓜QAQ的小破站</span>
                 </a>
             </div>
             
@@ -141,7 +141,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">我吃大西瓜QAQ的破站</div>
+        <div class="logo-name">我吃大西瓜QAQ的小破站</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -483,7 +483,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    346
+                    378
                 </div>
                 
 
@@ -500,12 +500,13 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><a href="https://www.jianshu.com/p/c4bbd66d842a" target="_blank" rel="noopener">原文链接</a></p>
+                <p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c4bbd66d842a">原文链接</a></p>
 <p>一、问题现象</p>
 <p>今天在将本地 module 添加为项目的 dependency 时，出现了如下的错误：</p>
 <p>image</p>
 <p>该类错误的格式如下：</p>
-<pre class=" language-java"><code class="language-java">Error<span class="token operator">:</span>Unable to resolve dependency <span class="token keyword">for</span> <span class="token string">':app@App名称/compileClasspath'</span><span class="token operator">:</span> Could not resolve project<span class="token operator">:</span>module库名称<span class="token punctuation">.</span></code></pre>
+<pre class=" language-java"><code class="language-java">Error<span class="token operator">:</span>Unable to resolve dependency <span class="token keyword">for</span> <span class="token string">':app@App名称/compileClasspath'</span><span class="token operator">:</span> Could not resolve project<span class="token operator">:</span>module库名称<span class="token punctuation">.</span>
+</code></pre>
 <p>二、问题原因：</p>
 <p>刚看到该问题时一脸蒙圈，经过坚持不懈的Google，终于找到了原因和解决方案。</p>
 <p>问题原因是：</p>
@@ -516,31 +517,33 @@
 <p>只要节点数量和名称一致即可，节点中的内容可以不一致</p>
 <p>四、解决示例：</p>
 <p>我当前项目 build.gradle 的 buildTypes{} 节点如下：</p>
-<pre class=" language-java"><code class="language-java"> buildTypes <span class="token punctuation">{</span>
-        debug <span class="token punctuation">{</span>
+<pre class=" language-java"><code class="language-java"> buildTypes <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        debug <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">//内容省略</span>
-        <span class="token punctuation">}</span>
-        release <span class="token punctuation">{</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        release <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">//内容省略</span>
-        <span class="token punctuation">}</span>
-        antTest <span class="token punctuation">{</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        antTest <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">//内容省略</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span></code></pre>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
 <p> 那么，所依赖 moudle 的 build.gradle 的 buildTypes{} 节点如下：</p>
-<pre class=" language-java"><code class="language-java">  buildTypes <span class="token punctuation">{</span>
-        debug <span class="token punctuation">{</span>
+<pre class=" language-java"><code class="language-java">  buildTypes <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        debug <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">//可以没有任何内容，只要节点数量和名称一致即可</span>
-        <span class="token punctuation">}</span>
-        release <span class="token punctuation">{</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        release <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">//可以没有任何内容，只要节点数量和名称一致即可</span>
-        <span class="token punctuation">}</span>
-        antTest <span class="token punctuation">{</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        antTest <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             <span class="token comment" spellcheck="true">//可以没有任何内容，只要节点数量和名称一致即可</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span></code></pre>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
 <p>五、参考链接：</p>
-<p><a href="https://stackoverflow.com/questions/46949622/android-studio-3-0-unable-to-resolve-dependency-for-appdexoptions-compileclas" target="_blank" rel="noopener">https://stackoverflow.com/questions/46949622/android-studio-3-0-unable-to-resolve-dependency-for-appdexoptions-compileclas</a></p>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/46949622/android-studio-3-0-unable-to-resolve-dependency-for-appdexoptions-compileclas">https://stackoverflow.com/questions/46949622/android-studio-3-0-unable-to-resolve-dependency-for-appdexoptions-compileclas</a></p>
 
             </div>
             <hr/>
@@ -1049,7 +1052,7 @@
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 我吃大西瓜QAQ的破站<br />'
+            + '来源: 我吃大西瓜QAQ的小破站<br />'
             + '文章作者: 我吃大西瓜<br />'
             + '文章链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';

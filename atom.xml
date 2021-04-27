@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>我吃大西瓜QAQ的破站</title>
+  <title>我吃大西瓜QAQ的小破站</title>
   
   <subtitle>陌上花开,可缓缓归矣</subtitle>
-  <link href="/atom.xml" rel="self"/>
+  <link href="https://yuaihen.github.io/atom.xml" rel="self"/>
   
   <link href="https://yuaihen.github.io/"/>
   <updated>2021-04-27T09:15:44.046Z</updated>
@@ -23,21 +23,19 @@
     <published>2021-04-27T09:14:49.000Z</published>
     <updated>2021-04-27T09:15:44.046Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h1 id=&quot;微信防撤回修改步骤&quot;&gt;&lt;a href=&quot;#微信防撤回修改步骤&quot; class=&quot;headerlink&quot;
+    <summary type="html">&lt;h1 id=&quot;微信防撤回修改步骤&quot;&gt;&lt;a href=&quot;#微信防撤回修改步骤&quot; class=&quot;headerlink&quot;</summary>
         
       
     
-    </summary>
     
     
     
-      <category term="微信" scheme="https://yuaihen.github.io/tags/%E5%BE%AE%E4%BF%A1/"/>
+    <category term="微信" scheme="https://yuaihen.github.io/tags/%E5%BE%AE%E4%BF%A1/"/>
     
   </entry>
   
@@ -48,29 +46,26 @@
     <published>2021-01-19T03:27:56.000Z</published>
     <updated>2021-01-19T03:29:59.084Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;添加到IDEA 提升依赖下载速度&lt;/p&gt;
-&lt;pre class=&quot; language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;repositories &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
- 
+    <summary type="html">&lt;p&gt;添加到IDEA 提升依赖下载速度&lt;/p&gt;
+&lt;pre class=&quot; language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;repositories &lt;span class=&quot;token</summary>
         
       
     
-    </summary>
     
     
-      <category term="Android Studio" scheme="https://yuaihen.github.io/categories/Android-Studio/"/>
+    <category term="Android Studio" scheme="https://yuaihen.github.io/categories/Android-Studio/"/>
     
     
-      <category term="Android Studio" scheme="https://yuaihen.github.io/tags/Android-Studio/"/>
+    <category term="Android Studio" scheme="https://yuaihen.github.io/tags/Android-Studio/"/>
     
-      <category term="Maven" scheme="https://yuaihen.github.io/tags/Maven/"/>
+    <category term="Maven" scheme="https://yuaihen.github.io/tags/Maven/"/>
     
-      <category term="jcenter" scheme="https://yuaihen.github.io/tags/jcenter/"/>
+    <category term="jcenter" scheme="https://yuaihen.github.io/tags/jcenter/"/>
     
   </entry>
   
@@ -81,27 +76,25 @@
     <published>2020-11-06T09:35:48.000Z</published>
     <updated>2020-11-06T10:31:28.212Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;最近在项目中使用到了PhotoView来针对图片进行缩放处理，原本绘制在Bitmap上的内容位置就发生了偏移，在此记录一下解决步骤。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;最近在项目中使用到了PhotoView来针对图片进行缩放处理，原本绘制在Bitmap上的内容位置就发生了偏移，在此记录一下解决步骤。&lt;/p&gt;
 &lt;p&gt;在PhotoView缩放操作中，图片本身的大小是不变的，图片的所有平移缩放等操作都是采用Matrix类来操作&lt;/p&gt;
-&lt;pre
+&lt;pre</summary>
         
       
     
-    </summary>
     
     
-      <category term="自定义View" scheme="https://yuaihen.github.io/categories/%E8%87%AA%E5%AE%9A%E4%B9%89View/"/>
+    <category term="自定义View" scheme="https://yuaihen.github.io/categories/%E8%87%AA%E5%AE%9A%E4%B9%89View/"/>
     
     
-      <category term="PhotoView" scheme="https://yuaihen.github.io/tags/PhotoView/"/>
+    <category term="PhotoView" scheme="https://yuaihen.github.io/tags/PhotoView/"/>
     
-      <category term="Matrix" scheme="https://yuaihen.github.io/tags/Matrix/"/>
+    <category term="Matrix" scheme="https://yuaihen.github.io/tags/Matrix/"/>
     
   </entry>
   
@@ -112,23 +105,22 @@
     <published>2020-09-16T08:14:56.000Z</published>
     <updated>2020-11-09T12:56:31.280Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;作者：HiDhl&lt;br&gt;链接：&lt;a href=&quot;https://juejin.im/post/6844904184974835720&quot; target=&quot;_blank&quot;
+    <summary type="html">&lt;p&gt;作者：HiDhl&lt;br&gt;链接：&lt;a href=&quot;https://juejin.im/post/6844904184974835720&quot;&gt;https://juejin.im/post/6844904184974835720&lt;/a&gt;&lt;br&gt;来源：掘金&lt;/p&gt;
+&lt;h4</summary>
         
       
     
-    </summary>
     
     
-      <category term="Kotlin" scheme="https://yuaihen.github.io/categories/Kotlin/"/>
+    <category term="Kotlin" scheme="https://yuaihen.github.io/categories/Kotlin/"/>
     
     
-      <category term="Kotlin" scheme="https://yuaihen.github.io/tags/Kotlin/"/>
+    <category term="Kotlin" scheme="https://yuaihen.github.io/tags/Kotlin/"/>
     
   </entry>
   
@@ -139,26 +131,24 @@
     <published>2020-08-03T09:22:05.000Z</published>
     <updated>2020-08-04T10:21:38.216Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;最近项目中需要接入热更新,在接入Bugly Tinker过程中遇到了很多问题,在此记录下,同时建议如果APP用户量不是非常大的还是接入阿里的Sophix吧,每月5万台设备免费,而且问题也没有这么多…&lt;/p&gt;
-&lt;h3
+    <summary type="html">&lt;p&gt;最近项目中需要接入热更新,在接入Bugly Tinker过程中遇到了很多问题,在此记录下,同时建议如果APP用户量不是非常大的还是接入阿里的Sophix吧,每月5万台设备免费,而且问题也没有这么多…&lt;/p&gt;
+&lt;h3</summary>
         
       
     
-    </summary>
     
     
-      <category term="热修复" scheme="https://yuaihen.github.io/categories/%E7%83%AD%E4%BF%AE%E5%A4%8D/"/>
+    <category term="热修复" scheme="https://yuaihen.github.io/categories/%E7%83%AD%E4%BF%AE%E5%A4%8D/"/>
     
     
-      <category term="Tinker" scheme="https://yuaihen.github.io/tags/Tinker/"/>
+    <category term="Tinker" scheme="https://yuaihen.github.io/tags/Tinker/"/>
     
-      <category term="Bugly" scheme="https://yuaihen.github.io/tags/Bugly/"/>
+    <category term="Bugly" scheme="https://yuaihen.github.io/tags/Bugly/"/>
     
   </entry>
   
@@ -169,25 +159,23 @@
     <published>2020-06-09T02:01:13.000Z</published>
     <updated>2020-06-09T02:01:50.193Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;今天在重装系统安装AS之后发现模拟器无法启动，提示这样一个错误：&lt;br&gt;&lt;code&gt;Cannot find AVD system path. Please define
+    <summary type="html">&lt;p&gt;今天在重装系统安装AS之后发现模拟器无法启动，提示这样一个错误：&lt;br&gt;&lt;code&gt;Cannot find AVD system path. Please define</summary>
         
       
     
-    </summary>
     
     
-      <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
+    <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
     
     
-      <category term="Android模拟器" scheme="https://yuaihen.github.io/tags/Android%E6%A8%A1%E6%8B%9F%E5%99%A8/"/>
+    <category term="Android模拟器" scheme="https://yuaihen.github.io/tags/Android%E6%A8%A1%E6%8B%9F%E5%99%A8/"/>
     
-      <category term="Android Studio" scheme="https://yuaihen.github.io/tags/Android-Studio/"/>
+    <category term="Android Studio" scheme="https://yuaihen.github.io/tags/Android-Studio/"/>
     
   </entry>
   
@@ -198,23 +186,21 @@
     <published>2020-06-02T08:54:42.000Z</published>
     <updated>2020-06-09T01:54:26.240Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h1 id=&quot;Kotlin的接口回调实现&quot;&gt;&lt;a href=&quot;#Kotlin的接口回调实现&quot; class=&quot;headerlink&quot; title=&quot;Kotlin的接口回调实现&quot;&gt;&lt;/a&gt;Kotlin的接口回调实现&lt;/h1&gt;&lt;h2
+    <summary type="html">&lt;h1 id=&quot;Kotlin的接口回调实现&quot;&gt;&lt;a href=&quot;#Kotlin的接口回调实现&quot; class=&quot;headerlink&quot; title=&quot;Kotlin的接口回调实现&quot;&gt;&lt;/a&gt;Kotlin的接口回调实现&lt;/h1&gt;&lt;h2</summary>
         
       
     
-    </summary>
     
     
-      <category term="Kotlin" scheme="https://yuaihen.github.io/categories/Kotlin/"/>
+    <category term="Kotlin" scheme="https://yuaihen.github.io/categories/Kotlin/"/>
     
     
-      <category term="Kotlin" scheme="https://yuaihen.github.io/tags/Kotlin/"/>
+    <category term="Kotlin" scheme="https://yuaihen.github.io/tags/Kotlin/"/>
     
   </entry>
   
@@ -225,28 +211,26 @@
     <published>2020-05-19T02:47:21.000Z</published>
     <updated>2020-06-02T09:32:19.635Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h3 id=&quot;1-单个字符的匹配规则如下：&quot;&gt;&lt;a href=&quot;#1-单个字符的匹配规则如下：&quot; class=&quot;headerlink&quot; title=&quot;1.单个字符的匹配规则如下：&quot;&gt;&lt;/a&gt;1.单个字符的匹配规则如下：&lt;/h3&gt;&lt;table&gt;
+    <summary type="html">&lt;h3 id=&quot;1-单个字符的匹配规则如下：&quot;&gt;&lt;a href=&quot;#1-单个字符的匹配规则如下：&quot; class=&quot;headerlink&quot; title=&quot;1.单个字符的匹配规则如下：&quot;&gt;&lt;/a&gt;1.单个字符的匹配规则如下：&lt;/h3&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th
+&lt;th</summary>
         
       
     
-    </summary>
     
     
-      <category term="Java" scheme="https://yuaihen.github.io/categories/Java/"/>
+    <category term="Java" scheme="https://yuaihen.github.io/categories/Java/"/>
     
     
-      <category term="正则表达式" scheme="https://yuaihen.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <category term="正则表达式" scheme="https://yuaihen.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
-      <category term="Java学习笔记" scheme="https://yuaihen.github.io/tags/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="Java学习笔记" scheme="https://yuaihen.github.io/tags/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -257,22 +241,21 @@
     <published>2020-04-29T10:18:34.000Z</published>
     <updated>2020-08-03T11:06:42.544Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;许多人在使用Flutter打包apk时都会参照文档的做法，但是按照文档基本上是百分之百失败的[手动狗头],官网的做法是这样的(可以不用看)&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://flutterchina.club/android-release/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官网做法&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;许多人在使用Flutter打包apk时都会参照文档的做法，但是按照文档基本上是百分之百失败的[手动狗头],官网的做法是这样的(可以不用看)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://flutterchina.club/android-release/&quot;&gt;官网做法&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;但是方法基本不可行。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;下面介绍一下正确的打包姿势&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;如果没有创建key的同学，先在命令行里输入下面的代码&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;keytool -genkey -v -keystore D:/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;keytool -genkey -v -keystore D:/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;接下来会让你创建密钥库和密钥的密码，记住自己创建的密码，下面会用到，&lt;/p&gt;
 &lt;p&gt;然后cmd就会让你输入一些信息，像一些奇奇怪怪的消息比如个人信息直接回车就可以了，然后中间会问你是否确认，输入y就可以了&lt;/p&gt;
-&lt;p&gt;不出意外在D盘的根目录下就会创建一个key.jks文件了，注意这个文件一定不要共享给别人。&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;不出意外在D盘的根目录下就会创建一个key.jks文件了，注意这个文件一定不要共享给别人。&lt;/p&gt;</summary>
     
     
-      <category term="Flutter" scheme="https://yuaihen.github.io/categories/Flutter/"/>
+    
+    <category term="Flutter" scheme="https://yuaihen.github.io/categories/Flutter/"/>
     
     
   </entry>
@@ -284,33 +267,37 @@
     <published>2020-04-29T10:15:58.000Z</published>
     <updated>2020-04-29T10:33:52.277Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;泛型&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;List&amp;lt;TextView&amp;gt; textViews = new ArrayList&amp;lt;Button&amp;gt;()//会报错&lt;/code&gt;&lt;/pre&gt;
+    <summary type="html">&lt;p&gt;泛型&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;List&amp;lt;TextView&amp;gt; textViews = new ArrayList&amp;lt;Button&amp;gt;()//会报错
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Java 的泛型类型会在编译时发生类型擦除，为了保证类型安全，不允许这样赋值。&lt;/p&gt;
 &lt;p&gt;Java中的解决方式:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;List&amp;lt;? extends TextView&amp;gt; textViews = new ArrayList&amp;lt;Button&amp;gt;()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;List&amp;lt;? extends TextView&amp;gt; textViews = new ArrayList&amp;lt;Button&amp;gt;()
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;其中 ? 是个通配符，表示这个 List 的泛型类型是一个未知类型这个 ，? extends 叫做「上界通配符」，可以使 Java 泛型具有「协变性 Covariance」，协变就是允许上面的赋值是合法的&lt;/p&gt;
 &lt;p&gt;下面几种情况都是可以的：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;java&quot;&gt;List&amp;lt;? extends TextView&amp;gt; textViews = new ArrayList&amp;lt;TextView&amp;gt;(); // 👈 本身
 List&amp;lt;? extends TextView&amp;gt; textViews = new ArrayList&amp;lt;Button&amp;gt;(); // 👈 直接子类
-List&amp;lt;? extends TextView&amp;gt; textViews = new ArrayList&amp;lt;RadioButton&amp;gt;(); // 👈 间接子类&lt;/code&gt;&lt;/pre&gt;
+List&amp;lt;? extends TextView&amp;gt; textViews = new ArrayList&amp;lt;RadioButton&amp;gt;(); // 👈 间接子类
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;编译器没法确定 ? 的类型，所以只能 get 到 Object 对象,无法add。&lt;/p&gt;
 &lt;p&gt;这个 ? super 叫做「下界通配符」，可以使 Java 泛型具有「逆变性 Contravariance」。&lt;/p&gt;
 &lt;p&gt;与上界通配符对应，这里 super 限制了通配符 ? 的子类型，所以称之为下界。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;List&amp;lt;? super Button&amp;gt; buttons = new ArrayList&amp;lt;TextView&amp;gt;();&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;下面几种情况都是可以的：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;List&amp;lt;? super Button&amp;gt; buttons = new ArrayList&amp;lt;TextView&amp;gt;();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;下面几种情况都是可以的：&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;java&quot;&gt;List&amp;lt;? super Button&amp;gt; buttons = new ArrayList&amp;lt;Button&amp;gt;(); // 👈 本身
 List&amp;lt;? super Button&amp;gt; buttons = new ArrayList&amp;lt;TextView&amp;gt;(); // 👈 直接父类
-List&amp;lt;? super Button&amp;gt; buttons = new ArrayList&amp;lt;Object&amp;gt;(); // 👈 间接父类&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-    
-      <category term="Kotlin" scheme="https://yuaihen.github.io/categories/Kotlin/"/>
+List&amp;lt;? super Button&amp;gt; buttons = new ArrayList&amp;lt;Object&amp;gt;(); // 👈 间接父类
+&lt;/code&gt;&lt;/pre&gt;</summary>
     
     
-      <category term="泛型" scheme="https://yuaihen.github.io/tags/%E6%B3%9B%E5%9E%8B/"/>
+    
+    <category term="Kotlin" scheme="https://yuaihen.github.io/categories/Kotlin/"/>
+    
+    
+    <category term="泛型" scheme="https://yuaihen.github.io/tags/%E6%B3%9B%E5%9E%8B/"/>
     
   </entry>
   
@@ -321,25 +308,23 @@ List&amp;lt;? super Button&amp;gt; buttons = new ArrayList&amp;lt;Object&amp;gt;
     <published>2020-04-29T10:14:15.000Z</published>
     <updated>2020-04-29T10:15:19.620Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;实际开发过程中，经常会使用Recyclerview嵌套 RecyclerView 或者 ScrollView 中嵌套Recyclerview。然而通过这种嵌套方式会导致 Recyclerview
+    <summary type="html">&lt;p&gt;实际开发过程中，经常会使用Recyclerview嵌套 RecyclerView 或者 ScrollView 中嵌套Recyclerview。然而通过这种嵌套方式会导致 Recyclerview</summary>
         
       
     
-    </summary>
     
     
-      <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
+    <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
     
     
-      <category term="RecyclerView" scheme="https://yuaihen.github.io/tags/RecyclerView/"/>
+    <category term="RecyclerView" scheme="https://yuaihen.github.io/tags/RecyclerView/"/>
     
-      <category term="滑动冲突" scheme="https://yuaihen.github.io/tags/%E6%BB%91%E5%8A%A8%E5%86%B2%E7%AA%81/"/>
+    <category term="滑动冲突" scheme="https://yuaihen.github.io/tags/%E6%BB%91%E5%8A%A8%E5%86%B2%E7%AA%81/"/>
     
   </entry>
   
@@ -350,25 +335,23 @@ List&amp;lt;? super Button&amp;gt; buttons = new ArrayList&amp;lt;Object&amp;gt;
     <published>2020-04-29T10:12:55.000Z</published>
     <updated>2020-04-29T10:13:41.366Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;RecyclerView通过使用SnapHelper中的PagerSnapHelper可以实现ViewPager类似的一次滑动一页的显示效果:&lt;/p&gt;
+    <summary type="html">&lt;p&gt;RecyclerView通过使用SnapHelper中的PagerSnapHelper可以实现ViewPager类似的一次滑动一页的显示效果:&lt;/p&gt;
 &lt;p&gt;在recyclerView设置LayoutManager的时候设置:&lt;/p&gt;
-&lt;pre class=&quot;
+&lt;pre class=&quot;</summary>
         
       
     
-    </summary>
     
     
-      <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
+    <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
     
     
-      <category term="RecyclerView" scheme="https://yuaihen.github.io/tags/RecyclerView/"/>
+    <category term="RecyclerView" scheme="https://yuaihen.github.io/tags/RecyclerView/"/>
     
   </entry>
   
@@ -379,24 +362,22 @@ List&amp;lt;? super Button&amp;gt; buttons = new ArrayList&amp;lt;Object&amp;gt;
     <published>2020-04-29T10:08:19.000Z</published>
     <updated>2020-04-29T10:11:22.387Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;关于RecyclerView如何使用正确notifyItemRemoved,有一些坑必须要填,直接调用&lt;/p&gt;
-&lt;pre class=&quot; language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;   data&lt;span
+    <summary type="html">&lt;p&gt;关于RecyclerView如何使用正确notifyItemRemoved,有一些坑必须要填,直接调用&lt;/p&gt;
+&lt;pre class=&quot; language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;data&lt;span class=&quot;token</summary>
         
       
     
-    </summary>
     
     
-      <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
+    <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
     
     
-      <category term="RecyclerView" scheme="https://yuaihen.github.io/tags/RecyclerView/"/>
+    <category term="RecyclerView" scheme="https://yuaihen.github.io/tags/RecyclerView/"/>
     
   </entry>
   
@@ -407,55 +388,54 @@ List&amp;lt;? super Button&amp;gt; buttons = new ArrayList&amp;lt;Object&amp;gt;
     <published>2020-04-29T10:06:28.000Z</published>
     <updated>2020-04-29T10:29:34.787Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/0883583f9074/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GridView滑动事件冲突解决&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/0883583f9074/&quot;&gt;GridView滑动事件冲突解决&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&quot;java&quot;&gt;import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.GridView;
 /**
  * Created by inerdstack on 2016/9/14.
  */
-public class MyGridView extends GridView {
+public class MyGridView extends GridView &amp;#123;
 
-    public MyGridView(Context context) {
+    public MyGridView(Context context) &amp;#123;
         super(context);
-    }
+    &amp;#125;
 
-    public MyGridView(Context context, AttributeSet attrs) {
+    public MyGridView(Context context, AttributeSet attrs) &amp;#123;
         super(context, attrs);
-    }
+    &amp;#125;
 
-    public MyGridView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public MyGridView(Context context, AttributeSet attrs, int defStyleAttr) &amp;#123;
         super(context, attrs, defStyleAttr);
-    }
+    &amp;#125;
 
     @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) &amp;#123;
 
         int expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE &amp;gt;&amp;gt; 2,
                 MeasureSpec.AT_MOST);
         super.onMeasure(widthMeasureSpec, expandSpec);
 
-    }
+    &amp;#125;
 
     @Override
-    public int getNumColumns() {
+    public int getNumColumns() &amp;#123;
         return 2;
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-    
-      <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;</summary>
     
     
-      <category term="RecyclerView" scheme="https://yuaihen.github.io/tags/RecyclerView/"/>
     
-      <category term="GridView" scheme="https://yuaihen.github.io/tags/GridView/"/>
+    <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
     
-      <category term="滑动冲突" scheme="https://yuaihen.github.io/tags/%E6%BB%91%E5%8A%A8%E5%86%B2%E7%AA%81/"/>
+    
+    <category term="RecyclerView" scheme="https://yuaihen.github.io/tags/RecyclerView/"/>
+    
+    <category term="GridView" scheme="https://yuaihen.github.io/tags/GridView/"/>
+    
+    <category term="滑动冲突" scheme="https://yuaihen.github.io/tags/%E6%BB%91%E5%8A%A8%E5%86%B2%E7%AA%81/"/>
     
   </entry>
   
@@ -466,25 +446,23 @@ public class MyGridView extends GridView {
     <published>2020-04-29T10:05:10.000Z</published>
     <updated>2020-04-29T10:06:03.272Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;h3 id=&quot;代码示例&quot;&gt;&lt;a href=&quot;#代码示例&quot; class=&quot;headerlink&quot; title=&quot;代码示例&quot;&gt;&lt;/a&gt;代码示例&lt;/h3&gt;&lt;pre class=&quot; language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span
+    <summary type="html">&lt;h3 id=&quot;代码示例&quot;&gt;&lt;a href=&quot;#代码示例&quot; class=&quot;headerlink&quot; title=&quot;代码示例&quot;&gt;&lt;/a&gt;代码示例&lt;/h3&gt;&lt;pre class=&quot; language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span</summary>
         
       
     
-    </summary>
     
     
-      <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
+    <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
     
     
-      <category term="RxJava" scheme="https://yuaihen.github.io/tags/RxJava/"/>
+    <category term="RxJava" scheme="https://yuaihen.github.io/tags/RxJava/"/>
     
-      <category term="教程" scheme="https://yuaihen.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://yuaihen.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
@@ -495,19 +473,17 @@ public class MyGridView extends GridView {
     <published>2020-04-29T10:03:20.000Z</published>
     <updated>2020-04-29T10:10:52.175Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;ViewPager的Adapter 支持Fragment动态添加和销毁&lt;br&gt;代码如下：&lt;/p&gt;
-    
-    </summary>
+    <summary type="html">&lt;p&gt;ViewPager的Adapter 支持Fragment动态添加和销毁&lt;br&gt;代码如下：&lt;/p&gt;</summary>
     
     
-      <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
+    
+    <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
     
     
-      <category term="ViewPager" scheme="https://yuaihen.github.io/tags/ViewPager/"/>
+    <category term="ViewPager" scheme="https://yuaihen.github.io/tags/ViewPager/"/>
     
-      <category term="Fragment" scheme="https://yuaihen.github.io/tags/Fragment/"/>
+    <category term="Fragment" scheme="https://yuaihen.github.io/tags/Fragment/"/>
     
   </entry>
   
@@ -518,25 +494,23 @@ public class MyGridView extends GridView {
     <published>2020-04-29T10:02:21.000Z</published>
     <updated>2020-04-29T10:02:53.669Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;pre class=&quot; language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;inflater&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token
+    <summary type="html">&lt;pre class=&quot; language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;inflater&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token</summary>
         
       
     
-    </summary>
     
     
-      <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
+    <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
     
     
-      <category term="Layout" scheme="https://yuaihen.github.io/tags/Layout/"/>
+    <category term="Layout" scheme="https://yuaihen.github.io/tags/Layout/"/>
     
-      <category term="Inflate" scheme="https://yuaihen.github.io/tags/Inflate/"/>
+    <category term="Inflate" scheme="https://yuaihen.github.io/tags/Inflate/"/>
     
   </entry>
   
@@ -547,27 +521,25 @@ public class MyGridView extends GridView {
     <published>2020-04-29T10:00:58.000Z</published>
     <updated>2020-04-30T01:47:19.116Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;在android开发过程中，适配更多的适配是必不可少的一步，而每次测试适配时，要么购买设配，要么模拟器，买设配太花钱，模拟器太占内存，不过幸好还可以通过修改手机的size(分辨率)和density来进行测试&lt;/p&gt;
+    <summary type="html">&lt;p&gt;在android开发过程中，适配更多的适配是必不可少的一步，而每次测试适配时，要么购买设配，要么模拟器，买设配太花钱，模拟器太占内存，不过幸好还可以通过修改手机的size(分辨率)和density来进行测试&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;进入adb
+&lt;li&gt;&lt;p&gt;进入adb</summary>
         
       
     
-    </summary>
     
     
-      <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
+    <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
     
     
-      <category term="ADB" scheme="https://yuaihen.github.io/tags/ADB/"/>
+    <category term="ADB" scheme="https://yuaihen.github.io/tags/ADB/"/>
     
-      <category term="dpi" scheme="https://yuaihen.github.io/tags/dpi/"/>
+    <category term="dpi" scheme="https://yuaihen.github.io/tags/dpi/"/>
     
   </entry>
   
@@ -578,24 +550,22 @@ public class MyGridView extends GridView {
     <published>2020-04-29T09:59:45.000Z</published>
     <updated>2020-04-29T10:00:31.198Z</updated>
     
-    <summary type="html">
     
       
       
         
         
-          &lt;p&gt;BaseActivity&lt;br&gt;-&amp;gt;&lt;br&gt;onCreate()&lt;br&gt;-&amp;gt;参考链接&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/EioJ8ogsCxQEFm44mKFiOQ&quot; target=&quot;_blank&quot;
+    <summary type="html">&lt;p&gt;BaseActivity&lt;br&gt;-&amp;gt;&lt;br&gt;onCreate()&lt;br&gt;-&amp;gt;参考链接&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/EioJ8ogsCxQEFm44mKFiOQ&quot;&gt;App 黑白化实现探索2，</summary>
         
       
     
-    </summary>
     
     
-      <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
+    <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
     
     
-      <category term="黑白化探索" scheme="https://yuaihen.github.io/tags/%E9%BB%91%E7%99%BD%E5%8C%96%E6%8E%A2%E7%B4%A2/"/>
+    <category term="黑白化探索" scheme="https://yuaihen.github.io/tags/%E9%BB%91%E7%99%BD%E5%8C%96%E6%8E%A2%E7%B4%A2/"/>
     
   </entry>
   
@@ -606,37 +576,37 @@ public class MyGridView extends GridView {
     <published>2020-04-29T09:58:42.000Z</published>
     <updated>2020-04-29T10:09:41.262Z</updated>
     
-    <summary type="html">
     
-      &lt;p&gt;在Activity中获取到FragmentManager&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;mFragmentManager = getSupportFragmentManager();&lt;/code&gt;&lt;/pre&gt;
+    <summary type="html">&lt;p&gt;在Activity中获取到FragmentManager&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;mFragmentManager = getSupportFragmentManager();
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;添加或者切换Fragment&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;private void addView(BaseFragment fragment, String tag) {
+&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;private void addView(BaseFragment fragment, String tag) &amp;#123;
         mFragmentTransaction = mFragmentManager.beginTransaction();
         //优先检查，fragment是否存在，避免重叠
         BaseFragment tempFragment = (BaseFragment) mFragmentManager.findFragmentByTag(tag);
-        if (tempFragment != null) {
+        if (tempFragment != null) &amp;#123;
             fragment = tempFragment;
-        }
-        if (fragment.isAdded()) {
+        &amp;#125;
+        if (fragment.isAdded()) &amp;#123;
             addOrShowFragment(fragment, tag);
-        } else {
-            if (currentFragment != null &amp;amp;&amp;amp; currentFragment.isAdded()) {
+        &amp;#125; else &amp;#123;
+            if (currentFragment != null &amp;amp;&amp;amp; currentFragment.isAdded()) &amp;#123;
                 mFragmentTransaction.hide(currentFragment).add(R.id.fl_container, fragment, tag).commitAllowingStateLoss();
-            } else {
+            &amp;#125; else &amp;#123;
                 mFragmentTransaction.add(R.id.fl_container, fragment, tag).commitAllowingStateLoss();
-            }
+            &amp;#125;
             currentFragment = fragment;
-        }
-    }&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-    
-      <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
+        &amp;#125;
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;</summary>
     
     
-      <category term="Fragment" scheme="https://yuaihen.github.io/tags/Fragment/"/>
+    
+    <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
+    
+    
+    <category term="Fragment" scheme="https://yuaihen.github.io/tags/Fragment/"/>
     
   </entry>
   

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Kotlin的一些小技巧, 我吃大西瓜QAQ的破站">
+    <meta name="keywords" content="Kotlin的一些小技巧, 我吃大西瓜QAQ的小破站">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Kotlin的一些小技巧 | 我吃大西瓜QAQ的破站</title>
+    <title>Kotlin的一些小技巧 | 我吃大西瓜QAQ的小破站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="我吃大西瓜QAQ的破站" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="我吃大西瓜QAQ的小破站" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -42,7 +42,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">我吃大西瓜QAQ的破站</span>
+                    <span class="logo-span">我吃大西瓜QAQ的小破站</span>
                 </a>
             </div>
             
@@ -141,7 +141,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">我吃大西瓜QAQ的破站</div>
+        <div class="logo-name">我吃大西瓜QAQ的小破站</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -483,14 +483,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.5k
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    7 分
                 </div>
                 
 
@@ -500,25 +500,26 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>作者：HiDhl<br>链接：<a href="https://juejin.im/post/6844904184974835720" target="_blank" rel="noopener">https://juejin.im/post/6844904184974835720</a><br>来源：掘金</p>
-<h4 id="1-Plus操作符"><a href="#1-Plus操作符" class="headerlink" title="1.Plus操作符"></a>1.Plus操作符</h4><p>在kotlin中可以利用 <code>plus (+)</code>和 <code>minus (-)</code>对 Map 集合做运算，如下所示。</p>
-<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <p>作者：HiDhl<br>链接：<a target="_blank" rel="noopener" href="https://juejin.im/post/6844904184974835720">https://juejin.im/post/6844904184974835720</a><br>来源：掘金</p>
+<h4 id="1-Plus操作符"><a href="#1-Plus操作符" class="headerlink" title="1.Plus操作符"></a>1.Plus操作符</h4><p>在kotlin中可以利用 <code>plus (+) </code>和 <code>minus (-) </code>对 Map 集合做运算，如下所示。</p>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">val</span> numbersMap <span class="token operator">=</span> <span class="token function">mapOf</span><span class="token punctuation">(</span><span class="token string">"one"</span> <span class="token keyword">to</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">"two"</span> <span class="token keyword">to</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">"three"</span> <span class="token keyword">to</span> <span class="token number">3</span><span class="token punctuation">)</span>
 
     <span class="token comment" spellcheck="true">// plus (+)</span>
-    <span class="token function">println</span><span class="token punctuation">(</span>numbersMap <span class="token operator">+</span> <span class="token function">Pair</span><span class="token punctuation">(</span><span class="token string">"four"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// {one=1, two=2, three=3, four=4}</span>
-    <span class="token function">println</span><span class="token punctuation">(</span>numbersMap <span class="token operator">+</span> <span class="token function">Pair</span><span class="token punctuation">(</span><span class="token string">"one"</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// {one=10, two=2, three=3}</span>
-    <span class="token function">println</span><span class="token punctuation">(</span>numbersMap <span class="token operator">+</span> <span class="token function">Pair</span><span class="token punctuation">(</span><span class="token string">"five"</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token function">Pair</span><span class="token punctuation">(</span><span class="token string">"one"</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// {one=11, two=2, three=3, five=5}</span>
+    <span class="token function">println</span><span class="token punctuation">(</span>numbersMap <span class="token operator">+</span> <span class="token function">Pair</span><span class="token punctuation">(</span><span class="token string">"four"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// &amp;#123;one=1, two=2, three=3, four=4&amp;#125;</span>
+    <span class="token function">println</span><span class="token punctuation">(</span>numbersMap <span class="token operator">+</span> <span class="token function">Pair</span><span class="token punctuation">(</span><span class="token string">"one"</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// &amp;#123;one=10, two=2, three=3&amp;#125;</span>
+    <span class="token function">println</span><span class="token punctuation">(</span>numbersMap <span class="token operator">+</span> <span class="token function">Pair</span><span class="token punctuation">(</span><span class="token string">"five"</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token function">Pair</span><span class="token punctuation">(</span><span class="token string">"one"</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// &amp;#123;one=11, two=2, three=3, five=5&amp;#125;</span>
 
     <span class="token comment" spellcheck="true">// minus (-)</span>
-    <span class="token function">println</span><span class="token punctuation">(</span>numbersMap <span class="token operator">-</span> <span class="token string">"one"</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// {two=2, three=3}</span>
-    <span class="token function">println</span><span class="token punctuation">(</span>numbersMap <span class="token operator">-</span> <span class="token function">listOf</span><span class="token punctuation">(</span><span class="token string">"two"</span><span class="token punctuation">,</span> <span class="token string">"four"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// {one=1, three=3}</span>
-<span class="token punctuation">}</span></code></pre>
+    <span class="token function">println</span><span class="token punctuation">(</span>numbersMap <span class="token operator">-</span> <span class="token string">"one"</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// &amp;#123;two=2, three=3&amp;#125;</span>
+    <span class="token function">println</span><span class="token punctuation">(</span>numbersMap <span class="token operator">-</span> <span class="token function">listOf</span><span class="token punctuation">(</span><span class="token string">"two"</span><span class="token punctuation">,</span> <span class="token string">"four"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// &amp;#123;one=1, three=3&amp;#125;</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
 <p>其实这里用到了运算符重载，Kotlin 在 <code>Maps.kt</code> 文件里面，定义了一系列用关键字 <code>operator</code> 声明的 Map 的扩展函数。</p>
 <p>用 operator 关键字声明 plus 函数，可以直接使用 + 号来做运算，使用 operator 修饰符声明 minus 函数，可以直接使用 - 号来做运算，其实我们也可以在自定义类里面实现 plus (+) 和 minus (-) 做运算。</p>
-<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">data</span> <span class="token keyword">class</span> <span class="token function">Salary</span><span class="token punctuation">(</span><span class="token keyword">var</span> base<span class="token operator">:</span> Int <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">data</span> <span class="token keyword">class</span> <span class="token function">Salary</span><span class="token punctuation">(</span><span class="token keyword">var</span> base<span class="token operator">:</span> Int <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">)</span>&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">override</span> <span class="token keyword">fun</span> <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> String <span class="token operator">=</span> base<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 
 operator <span class="token keyword">fun</span> Salary<span class="token punctuation">.</span><span class="token function">plus</span><span class="token punctuation">(</span>other<span class="token operator">:</span> Salary<span class="token punctuation">)</span><span class="token operator">:</span> Salary <span class="token operator">=</span> <span class="token function">Salary</span><span class="token punctuation">(</span>base <span class="token operator">+</span> other<span class="token punctuation">.</span>base<span class="token punctuation">)</span>
 operator <span class="token keyword">fun</span> Salary<span class="token punctuation">.</span><span class="token function">minus</span><span class="token punctuation">(</span>other<span class="token operator">:</span> Salary<span class="token punctuation">)</span><span class="token operator">:</span> Salary <span class="token operator">=</span> <span class="token function">Salary</span><span class="token punctuation">(</span>base <span class="token operator">-</span> other<span class="token punctuation">.</span>base<span class="token punctuation">)</span>
@@ -526,31 +527,34 @@ operator <span class="token keyword">fun</span> Salary<span class="token punctua
 <span class="token keyword">val</span> s1 <span class="token operator">=</span> <span class="token function">Salary</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
 <span class="token keyword">val</span> s2 <span class="token operator">=</span> <span class="token function">Salary</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
 <span class="token function">println</span><span class="token punctuation">(</span>s1 <span class="token operator">+</span> s2<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 30</span>
-<span class="token function">println</span><span class="token punctuation">(</span>s1 <span class="token operator">-</span> s2<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// -10</span></code></pre>
+<span class="token function">println</span><span class="token punctuation">(</span>s1 <span class="token operator">-</span> s2<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// -10</span>
+</code></pre>
 <h4 id="2-Map设置默认值"><a href="#2-Map设置默认值" class="headerlink" title="2.Map设置默认值"></a>2.Map设置默认值</h4><p>在 Map 集合中，可以使用 withDefault 设置一个默认值，当键不在 Map 集合中，通过 getValue 返回默认值。</p>
 <pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">val</span> map <span class="token operator">=</span> <span class="token function">mapOf</span><span class="token punctuation">(</span>
         <span class="token string">"java"</span> <span class="token keyword">to</span> <span class="token number">1</span><span class="token punctuation">,</span>
         <span class="token string">"kotlin"</span> <span class="token keyword">to</span> <span class="token number">2</span><span class="token punctuation">,</span>
         <span class="token string">"python"</span> <span class="token keyword">to</span> <span class="token number">3</span>
-<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">withDefault</span> <span class="token punctuation">{</span> <span class="token string">"?"</span> <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">.</span>withDefault &amp;#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token string">"?"</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 
 <span class="token function">println</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token string">"java"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 1</span>
 <span class="token function">println</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token string">"kotlin"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 2</span>
-<span class="token function">println</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token string">"c++"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// ?</span></code></pre>
+<span class="token function">println</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token string">"c++"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// ?</span>
+</code></pre>
 <h4 id="3-使用-require-或者-check-函数作为条件检查"><a href="#3-使用-require-或者-check-函数作为条件检查" class="headerlink" title="3.使用 require 或者 check 函数作为条件检查"></a>3.使用 require 或者 check 函数作为条件检查</h4><pre class=" language-kotlin"><code class="language-kotlin"><span class="token operator">/</span> 传统的做法
 <span class="token keyword">val</span> age <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-<span class="token keyword">if</span> <span class="token punctuation">(</span>age <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>age <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">throw</span> <span class="token function">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token string">"age must  not be negative"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">// 使用 require 去检查 如果age小于等于0 则抛出异常</span>
-<span class="token function">require</span><span class="token punctuation">(</span>age <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token string">"age must be negative"</span> <span class="token punctuation">}</span>
+<span class="token function">require</span><span class="token punctuation">(</span>age <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token string">"age must be negative"</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">// 使用 checkNotNull 检查</span>
 <span class="token keyword">val</span> name<span class="token operator">:</span> String<span class="token operator">?</span> <span class="token operator">=</span> <span class="token keyword">null</span>
-<span class="token function">checkNotNull</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token function">checkNotNull</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token string">"name must not be null"</span>
-<span class="token punctuation">}</span></code></pre>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
 <h4 id="4-如何区分和使用-run-with-let-also-apply"><a href="#4-如何区分和使用-run-with-let-also-apply" class="headerlink" title="4. 如何区分和使用 run, with, let, also, apply"></a>4. 如何区分和使用 run, with, let, also, apply</h4><table>
 <thead>
 <tr>
@@ -593,31 +597,31 @@ operator <span class="token keyword">fun</span> Salary<span class="token punctua
 </tbody></table>
 <h5 id="是否是扩展函数"><a href="#是否是扩展函数" class="headerlink" title="是否是扩展函数"></a>是否是扩展函数</h5><p>首先我们来看一下 with 和 T.run，这两个函数非常的相似，他们的区别在于 with 是个普通函数，T.run 是个扩展函数，来看一下下面的例子。</p>
 <pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">val</span> name<span class="token operator">:</span> String<span class="token operator">?</span> <span class="token operator">=</span> <span class="token keyword">null</span>
-<span class="token function">with</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token function">with</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>&amp;#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">val</span> subName <span class="token operator">=</span> name<span class="token operator">!!</span><span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">// 使用之前可以检查它的可空性</span>
-name<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">run</span> <span class="token punctuation">{</span> <span class="token keyword">val</span> subName <span class="token operator">=</span> name<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token operator">?:</span><span class="token keyword">throw</span> <span class="token function">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token string">"name must not be null"</span><span class="token punctuation">)</span>
+name<span class="token operator">?</span><span class="token punctuation">.</span>run &amp;#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token keyword">val</span> subName <span class="token operator">=</span> name<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token operator">?:</span><span class="token keyword">throw</span> <span class="token function">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token string">"name must not be null"</span><span class="token punctuation">)</span>
 </code></pre>
 <p>在这个例子当中，name?.run 会更好一些，因为在使用之前可以检查它的可空性。</p>
 <h5 id="作用域函数的参数（this、it）"><a href="#作用域函数的参数（this、it）" class="headerlink" title="作用域函数的参数（this、it）"></a>作用域函数的参数（this、it）</h5><p>我们在来看一下 T.run 和 T.let，它们都是扩展函数，但是他们的参数不一样 T.run 的参数是 this, T.let 的参数是 it。</p>
 <pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">val</span> name<span class="token operator">:</span> String<span class="token operator">?</span> <span class="token operator">=</span> <span class="token string">"hi-dhl.com"</span>
 
 <span class="token comment" spellcheck="true">// 参数是 this，可以省略不写</span>
-name<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">run</span> <span class="token punctuation">{</span>
-    <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"The length  is <span class="token interpolation"><span class="token delimiter variable">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>length<span class="token delimiter variable">}</span></span>  this 是可以省略的 <span class="token interpolation"><span class="token delimiter variable">${</span>length<span class="token delimiter variable">}</span></span>"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
+name<span class="token operator">?</span><span class="token punctuation">.</span>run &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"The length  is $&amp;#123;this.length&amp;#125;  this 是可以省略的 $&amp;#123;length&amp;#125;"</span><span class="token punctuation">)</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">// 参数 it</span>
-name<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">let</span> <span class="token punctuation">{</span>
-    <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"The length  is  <span class="token interpolation"><span class="token delimiter variable">${</span>it<span class="token punctuation">.</span>length<span class="token delimiter variable">}</span></span>"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
+name<span class="token operator">?</span><span class="token punctuation">.</span>let &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"The length  is  $&amp;#123;it.length&amp;#125;"</span><span class="token punctuation">)</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">// 自定义参数名字</span>
-name<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">let</span> <span class="token punctuation">{</span> str <span class="token operator">-></span>
-    <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"The length  is  <span class="token interpolation"><span class="token delimiter variable">${</span>str<span class="token punctuation">.</span>length<span class="token delimiter variable">}</span></span>"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
+name<span class="token operator">?</span><span class="token punctuation">.</span>let &amp;#<span class="token number">123</span><span class="token punctuation">;</span> str <span class="token operator">-></span>
+    <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"The length  is  $&amp;#123;str.length&amp;#125;"</span><span class="token punctuation">)</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 <p>在上面的例子中看似 T.run 会更好，因为 this 可以省略，调用更加的简洁，但是 T.let 允许我们自定义参数名字，使可读性更强，如果倾向可读性可以选择 T.let。</p>
 <h5 id="作用域函数的返回值（调用本身、其他类型）"><a href="#作用域函数的返回值（调用本身、其他类型）" class="headerlink" title="作用域函数的返回值（调用本身、其他类型）"></a>作用域函数的返回值（调用本身、其他类型）</h5><p>接下里我们来看一下 T.let 和 T.also 它们接受的参数都是 it, 但是它们的返回值是不同的 T.let 返回最后一行，T.also 返回调用本身。</p>
@@ -625,46 +629,47 @@ name<span class="token operator">?</span><span class="token punctuation">.</span
 <span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">"hi-dhl"</span>
 
 <span class="token comment" spellcheck="true">// 返回调用本身</span>
-name <span class="token operator">=</span> name<span class="token punctuation">.</span><span class="token function">also</span> <span class="token punctuation">{</span>
+name <span class="token operator">=</span> name<span class="token punctuation">.</span>also &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">val</span> result <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">*</span> <span class="token number">1</span>
     <span class="token string">"juejin"</span>
-<span class="token punctuation">}</span>
-<span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"name = <span class="token interpolation"><span class="token delimiter variable">${</span>name<span class="token delimiter variable">}</span></span>"</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// name = hi-dhl</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"name = $&amp;#123;name&amp;#125;"</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// name = hi-dhl</span>
 
 <span class="token comment" spellcheck="true">// 返回的最后一行</span>
-name <span class="token operator">=</span> name<span class="token punctuation">.</span><span class="token function">let</span> <span class="token punctuation">{</span>
+name <span class="token operator">=</span> name<span class="token punctuation">.</span>let &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">val</span> result <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">*</span> <span class="token number">1</span>
     <span class="token string">"hi-dhl.com"</span>
-<span class="token punctuation">}</span>
-<span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"name = <span class="token interpolation"><span class="token delimiter variable">${</span>name<span class="token delimiter variable">}</span></span>"</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// name = hi-dhl.com</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"name = $&amp;#123;name&amp;#125;"</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// name = hi-dhl.com</span>
 
 </code></pre>
 <p>从上面的例子来看 T.also 似乎没有什么意义，细想一下其实是非常有意义的，在使用之前可以进行自我操作，结合其他的函数，功能会更强大。</p>
-<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">makeDir</span><span class="token punctuation">(</span>path<span class="token operator">:</span> String<span class="token punctuation">)</span> <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">let</span><span class="token punctuation">{</span> <span class="token function">File</span><span class="token punctuation">(</span>it<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token function">also</span><span class="token punctuation">{</span> it<span class="token punctuation">.</span><span class="token function">mkdirs</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">}</span></code></pre>
+<pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">fun</span> <span class="token function">makeDir</span><span class="token punctuation">(</span>path<span class="token operator">:</span> String<span class="token punctuation">)</span> <span class="token operator">=</span> path<span class="token punctuation">.</span>let&amp;#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token function">File</span><span class="token punctuation">(</span>it<span class="token punctuation">)</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span><span class="token punctuation">.</span>also&amp;#<span class="token number">123</span><span class="token punctuation">;</span> it<span class="token punctuation">.</span><span class="token function">mkdirs</span><span class="token punctuation">(</span><span class="token punctuation">)</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
 <h5 id="T-apply-函数"><a href="#T-apply-函数" class="headerlink" title="T.apply 函数"></a>T.apply 函数</h5><p>通过上面三个方面，大致了解函数的行为，接下来看一下 T.apply 函数，T.apply 函数是一个扩展函数，返回值是它本身，并且接受的参数是 this。</p>
 <pre class=" language-kotlin"><code class="language-kotlin"><span class="token comment" spellcheck="true">// 普通方法</span>
-<span class="token keyword">fun</span> <span class="token function">createInstance</span><span class="token punctuation">(</span>args<span class="token operator">:</span> Bundle<span class="token punctuation">)</span> <span class="token operator">:</span> MyFragment <span class="token punctuation">{</span>
+<span class="token keyword">fun</span> <span class="token function">createInstance</span><span class="token punctuation">(</span>args<span class="token operator">:</span> Bundle<span class="token punctuation">)</span> <span class="token operator">:</span> MyFragment &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">val</span> fragment <span class="token operator">=</span> <span class="token function">MyFragment</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
     fragment<span class="token punctuation">.</span>arguments <span class="token operator">=</span> args
     <span class="token keyword">return</span> fragment
-<span class="token punctuation">}</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">// 改进方法</span>
 <span class="token keyword">fun</span> <span class="token function">createInstance</span><span class="token punctuation">(</span>args<span class="token operator">:</span> Bundle<span class="token punctuation">)</span> 
-              <span class="token operator">=</span> <span class="token function">MyFragment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">apply</span> <span class="token punctuation">{</span> arguments <span class="token operator">=</span> args <span class="token punctuation">}</span>
+              <span class="token operator">=</span> <span class="token function">MyFragment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>apply &amp;#<span class="token number">123</span><span class="token punctuation">;</span> arguments <span class="token operator">=</span> args &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">// 普通方法</span>
-<span class="token keyword">fun</span> <span class="token function">createIntent</span><span class="token punctuation">(</span>intentData<span class="token operator">:</span> String<span class="token punctuation">,</span> intentAction<span class="token operator">:</span> String<span class="token punctuation">)</span><span class="token operator">:</span> Intent <span class="token punctuation">{</span>
+<span class="token keyword">fun</span> <span class="token function">createIntent</span><span class="token punctuation">(</span>intentData<span class="token operator">:</span> String<span class="token punctuation">,</span> intentAction<span class="token operator">:</span> String<span class="token punctuation">)</span><span class="token operator">:</span> Intent &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">val</span> intent <span class="token operator">=</span> <span class="token function">Intent</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
     intent<span class="token punctuation">.</span>action <span class="token operator">=</span> intentAction
     intent<span class="token punctuation">.</span>data<span class="token operator">=</span>Uri<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>intentData<span class="token punctuation">)</span>
     <span class="token keyword">return</span> intent
-<span class="token punctuation">}</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">// 改进方法，链式调用</span>
 <span class="token keyword">fun</span> <span class="token function">createIntent</span><span class="token punctuation">(</span>intentData<span class="token operator">:</span> String<span class="token punctuation">,</span> intentAction<span class="token operator">:</span> String<span class="token punctuation">)</span> <span class="token operator">=</span>
-        <span class="token function">Intent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">apply</span> <span class="token punctuation">{</span> action <span class="token operator">=</span> intentAction <span class="token punctuation">}</span>
-                <span class="token punctuation">.</span><span class="token function">apply</span> <span class="token punctuation">{</span> <span class="token keyword">data</span> <span class="token operator">=</span> Uri<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>intentData<span class="token punctuation">)</span> <span class="token punctuation">}</span>
+        <span class="token function">Intent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>apply &amp;#<span class="token number">123</span><span class="token punctuation">;</span> action <span class="token operator">=</span> intentAction &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+                <span class="token punctuation">.</span>apply &amp;#<span class="token number">123</span><span class="token punctuation">;</span> <span class="token keyword">data</span> <span class="token operator">=</span> Uri<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>intentData<span class="token punctuation">)</span> &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 <h5 id="使用-T-also-函数交换两个变量"><a href="#使用-T-also-函数交换两个变量" class="headerlink" title="使用 T.also 函数交换两个变量"></a>使用 T.also 函数交换两个变量</h5><p>接下来演示的是使用 T.also 函数，实现一行代码交换两个变量？我们先来回顾一下 Java 的做法。</p>
 <pre class=" language-kotlin"><code class="language-kotlin">int a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
@@ -678,8 +683,8 @@ System<span class="token punctuation">.</span>out<span class="token punctuation"
 
 
 <span class="token comment" spellcheck="true">// Kotlin</span>
-a <span class="token operator">=</span> b<span class="token punctuation">.</span><span class="token function">also</span> <span class="token punctuation">{</span> b <span class="token operator">=</span> a <span class="token punctuation">}</span>
-<span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"a = <span class="token interpolation"><span class="token delimiter variable">${</span>a<span class="token delimiter variable">}</span></span> b = <span class="token interpolation"><span class="token delimiter variable">${</span>b<span class="token delimiter variable">}</span></span>"</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// a = 2 b = 1</span>
+a <span class="token operator">=</span> b<span class="token punctuation">.</span>also &amp;#<span class="token number">123</span><span class="token punctuation">;</span> b <span class="token operator">=</span> a &amp;#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"a = $&amp;#123;a&amp;#125; b = $&amp;#123;b&amp;#125;"</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// a = 2 b = 1</span>
 </code></pre>
 <p>来一起分析 T.also 是如何做到的，其实这里用到了 T.also 函数的两个特点。</p>
 <ul>
@@ -689,24 +694,24 @@ a <span class="token operator">=</span> b<span class="token punctuation">.</span
 <p>也就是说 b.also { b = a } 会先将 a 的值 (1) 赋值给 b，此时 b 的值为 1，然后将 b 原始的值（2）赋值给 a，此时 a 的值为 2，实现交换两个变量的目的。</p>
 <h4 id="5-in-和-when-关键字"><a href="#5-in-和-when-关键字" class="headerlink" title="5. in 和 when 关键字"></a>5. in 和 when 关键字</h4><p>使用 in 和 when 关键字结合正则表达式，验证用户的输入，这是一个很酷的技巧。</p>
 <pre class=" language-kotlin"><code class="language-kotlin"><span class="token comment" spellcheck="true">// 使用扩展函数重写 contains 操作符</span>
-operator <span class="token keyword">fun</span> Regex<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>text<span class="token operator">:</span> CharSequence<span class="token punctuation">)</span> <span class="token operator">:</span> Boolean <span class="token punctuation">{</span>
+operator <span class="token keyword">fun</span> Regex<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span>text<span class="token operator">:</span> CharSequence<span class="token punctuation">)</span> <span class="token operator">:</span> Boolean &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
   <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">containsMatchIn</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 
 <span class="token comment" spellcheck="true">// 结合着 in 和 when 一起使用</span>
-<span class="token keyword">when</span> <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">when</span> <span class="token punctuation">(</span>input<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
   <span class="token keyword">in</span> <span class="token function">Regex</span><span class="token punctuation">(</span><span class="token string">"[0–9]"</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"contains a number"</span><span class="token punctuation">)</span>
   <span class="token keyword">in</span> <span class="token function">Regex</span><span class="token punctuation">(</span><span class="token string">"[a-zA-Z]"</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"contains a letter"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 <p>in 关键字其实是 contains 操作符的简写，它不是一个接口，也不是一个类型，仅仅是一个操作符，也就是说任意一个类只要重写了 contains 操作符，都可以使用 in 关键字，如果我们想要在自定义类型中检查一个值是否在列表中，只需要重写 contains() 方法即可，Collections 集合也重写了 contains 操作符。</p>
 <pre class=" language-kotlin"><code class="language-kotlin"><span class="token keyword">val</span> input <span class="token operator">=</span> <span class="token string">"kotlin"</span>
 
-<span class="token keyword">when</span> <span class="token punctuation">(</span>input<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">in</span> <span class="token function">listOf</span><span class="token punctuation">(</span><span class="token string">"java"</span><span class="token punctuation">,</span> <span class="token string">"kotlin"</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"found <span class="token interpolation"><span class="token delimiter variable">${</span>input<span class="token delimiter variable">}</span></span>"</span><span class="token punctuation">)</span>
-    <span class="token keyword">in</span> <span class="token function">setOf</span><span class="token punctuation">(</span><span class="token string">"python"</span><span class="token punctuation">,</span> <span class="token string">"c++"</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"found <span class="token interpolation"><span class="token delimiter variable">${</span>input<span class="token delimiter variable">}</span></span>"</span><span class="token punctuation">)</span>
-    <span class="token keyword">else</span> <span class="token operator">-></span> <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" not found <span class="token interpolation"><span class="token delimiter variable">${</span>input<span class="token delimiter variable">}</span></span>"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
+<span class="token keyword">when</span> <span class="token punctuation">(</span>input<span class="token punctuation">)</span> &amp;#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">in</span> <span class="token function">listOf</span><span class="token punctuation">(</span><span class="token string">"java"</span><span class="token punctuation">,</span> <span class="token string">"kotlin"</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"found $&amp;#123;input&amp;#125;"</span><span class="token punctuation">)</span>
+    <span class="token keyword">in</span> <span class="token function">setOf</span><span class="token punctuation">(</span><span class="token string">"python"</span><span class="token punctuation">,</span> <span class="token string">"c++"</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"found $&amp;#123;input&amp;#125;"</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span> <span class="token operator">-></span> <span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" not found $&amp;#123;input&amp;#125;"</span><span class="token punctuation">)</span>
+&amp;#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
 
             </div>
@@ -1216,7 +1221,7 @@ operator <span class="token keyword">fun</span> Regex<span class="token punctuat
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 我吃大西瓜QAQ的破站<br />'
+            + '来源: 我吃大西瓜QAQ的小破站<br />'
             + '文章作者: 我吃大西瓜<br />'
             + '文章链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';

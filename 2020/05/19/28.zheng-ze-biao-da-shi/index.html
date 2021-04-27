@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="正则表达式, 我吃大西瓜QAQ的破站">
+    <meta name="keywords" content="正则表达式, 我吃大西瓜QAQ的小破站">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>正则表达式 | 我吃大西瓜QAQ的破站</title>
+    <title>正则表达式 | 我吃大西瓜QAQ的小破站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="我吃大西瓜QAQ的破站" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="我吃大西瓜QAQ的小破站" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -42,7 +42,7 @@
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">我吃大西瓜QAQ的破站</span>
+                    <span class="logo-span">我吃大西瓜QAQ的小破站</span>
                 </a>
             </div>
             
@@ -141,7 +141,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">我吃大西瓜QAQ的破站</div>
+        <div class="logo-name">我吃大西瓜QAQ的小破站</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -494,7 +494,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    7 分
                 </div>
                 
 
@@ -530,12 +530,12 @@
 <tr>
 <td align="left"><code>\d</code></td>
 <td align="left">数字0~9</td>
-<td align="right"><code>0</code>~<code>9</code></td>
+<td align="right"><code>0</code>~`9`</td>
 </tr>
 <tr>
 <td align="left"><code>\w</code></td>
 <td align="left">大小写字母，数字和下划线</td>
-<td align="right"><code>a</code><del><code>z</code>，<code>A</code></del><code>Z</code>，<code>0</code>~<code>9</code>，<code>_</code></td>
+<td align="right"><code>a</code><del><code>z</code>，<code>A</code></del><code>Z</code>，<code>0</code>~`9<code>，</code>_`</td>
 </tr>
 <tr>
 <td align="left"><code>\s</code></td>
@@ -582,22 +582,22 @@
 <td align="left">空，<code>A</code></td>
 </tr>
 <tr>
-<td align="left"><code>A{3}</code></td>
+<td align="left"><code>A&#123;3&#125;</code></td>
 <td align="left">指定个数字符</td>
 <td align="left"><code>AAA</code></td>
 </tr>
 <tr>
-<td align="left"><code>A{2,3}</code></td>
+<td align="left"><code>A&#123;2,3&#125;</code></td>
 <td align="left">指定范围个数字符</td>
 <td align="left"><code>AA</code>，<code>AAA</code></td>
 </tr>
 <tr>
-<td align="left"><code>A{2,}</code></td>
+<td align="left"><code>A&#123;2,&#125;</code></td>
 <td align="left">至少n个字符</td>
 <td align="left"><code>AA</code>，<code>AAA</code>，<code>AAAA</code>，……</td>
 </tr>
 <tr>
-<td align="left"><code>A{0,3}</code></td>
+<td align="left"><code>A&#123;0,3&#125;</code></td>
 <td align="left">最多n个字符</td>
 <td align="left">空，<code>A</code>，<code>AA</code>，<code>AAA</code></td>
 </tr>
@@ -605,14 +605,15 @@
 <h3 id="3-匹配指定范围"><a href="#3-匹配指定范围" class="headerlink" title="3.匹配指定范围"></a>3.匹配指定范围</h3><pre class=" language-java"><code class="language-java">比如1A2b3c，我们可以这样写：<span class="token punctuation">[</span><span class="token number">0</span><span class="token operator">-</span>9a<span class="token operator">-</span>fA<span class="token operator">-</span>F<span class="token punctuation">]</span>，它表示一共可以匹配以下任意范围的字符：
 <span class="token number">0</span><span class="token operator">-</span><span class="token number">9</span>：字符<span class="token number">0</span><span class="token operator">~</span><span class="token number">9</span>；
 a<span class="token operator">-</span>f：字符a<span class="token operator">~</span>f；
-A<span class="token operator">-</span>F：字符A<span class="token operator">~</span>F。</code></pre>
+A<span class="token operator">-</span>F：字符A<span class="token operator">~</span>F。
+</code></pre>
 <h4 id="3-1排除法"><a href="#3-1排除法" class="headerlink" title="3.1排除法"></a>3.1排除法</h4><p>​    <code>^</code> 不包含指定范围的字符</p>
 <ul>
-<li><p>假设我们要匹配任意字符，但不包括数字，可以写<code>[^1-9]{3}</code>：</p>
+<li><p>假设我们要匹配任意字符，但不包括数字，可以写<code>[^1-9]&#123;3&#125;</code>：</p>
 <ul>
-<li><p>可以匹配<code>&quot;ABC&quot;</code>，因为不包含字符<code>1</code>~<code>9</code>；</p>
+<li><p>可以匹配<code>&quot;ABC&quot;</code>，因为不包含字符<code>1</code>~`9`；</p>
 </li>
-<li><p>可以匹配<code>&quot;A00&quot;</code>，因为不包含字符<code>1</code>~<code>9</code>；</p>
+<li><p>可以匹配<code>&quot;A00&quot;</code>，因为不包含字符<code>1</code>~`9`；</p>
 </li>
 <li><p>不能匹配<code>&quot;A01&quot;</code>，因为包含字符<code>1</code>；</p>
 </li>
@@ -627,42 +628,45 @@ A<span class="token operator">-</span>F：字符A<span class="token operator">~<
 <span class="token comment" spellcheck="true">//匹配字符串learn Java、learn Php和learn Go的大小写</span>
 </code></pre>
 <h3 id="6-分组匹配"><a href="#6-分组匹配" class="headerlink" title="6.分组匹配"></a>6.分组匹配</h3><p>正则匹配<code>区号-电话号</code>码这个规则</p>
-<pre class=" language-java"><code class="language-java">\d<span class="token punctuation">{</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">}</span>\<span class="token operator">-</span>\d<span class="token punctuation">{</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">}</span></code></pre>
-<p>如果需要提取区号和电话号码，需要将要提取的规则使用括号分组，把上述正则表达式变为<code>(\d{3,4})\-(\d{6,8})</code></p>
-<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        Pattern p <span class="token operator">=</span> Pattern<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span><span class="token string">"(\\d{3,4})\\-(\\d{7,8})"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<pre class=" language-java"><code class="language-java">\d<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>\<span class="token operator">-</span>\d<span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<p>如果需要提取区号和电话号码，需要将要提取的规则使用括号分组，把上述正则表达式变为<code>(\d&#123;3,4&#125;)\-(\d&#123;6,8&#125;)</code></p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        Pattern p <span class="token operator">=</span> Pattern<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span><span class="token string">"(\\d&amp;#123;3,4&amp;#125;)\\-(\\d&amp;#123;7,8&amp;#125;)"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         Matcher m <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">matcher</span><span class="token punctuation">(</span><span class="token string">"010-12345678"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//010-12345678</span>
             String g1 <span class="token operator">=</span> m<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">////010</span>
             String g2 <span class="token operator">=</span> m<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//12345678</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>g1<span class="token punctuation">)</span><span class="token punctuation">;</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>g2<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"匹配失败!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
 <p>使用<code>Matcher</code>时，必须首先调用<code>matches()</code>判断是否匹配成功，匹配成功后，才能调用<code>group()</code>提取子串。</p>
 <p>例子：<br>从字符串<code>23:01:59</code>提取时、分、秒</p>
 <pre class=" language-java"><code class="language-java">var time <span class="token operator">=</span> <span class="token string">"([0-1]\\d|2[0-3]):([0-5]\\d):([0-5]\\d)"</span><span class="token punctuation">;</span>
 Pattern p1 <span class="token operator">=</span> Pattern<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span>time<span class="token punctuation">)</span><span class="token punctuation">;</span>
 Matcher m1 <span class="token operator">=</span> p1<span class="token punctuation">.</span><span class="token function">matcher</span><span class="token punctuation">(</span><span class="token string">"23:01:59"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-   <span class="token keyword">if</span> <span class="token punctuation">(</span>m1<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>m1<span class="token punctuation">.</span><span class="token function">matches</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
          System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>m1<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
          System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>m1<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
          System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>m1<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+   <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span> <span class="token keyword">else</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"匹配失败"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-   <span class="token punctuation">}</span></code></pre>
+   <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
 <h3 id="7-非贪婪匹配"><a href="#7-非贪婪匹配" class="headerlink" title="7.非贪婪匹配"></a>7.非贪婪匹配</h3><p>给定一个字符串表示的数字，判断该数字末尾<code>0</code>的个数。可以很容易地写出该正则表达式：<code>(\d+)(0*)</code></p>
 <ul>
-<li><p><code>&quot;123000&quot;</code>：3个<code>0</code>  期望结果: <code>123</code> <code>000</code>  实际结果:<code>&quot;123000&quot;</code> <code>&quot;&quot;</code></p>
+<li><p><code>&quot;123000&quot;</code>：3个<code>0</code>  期望结果: <code>123</code> <code>000</code>  实际结果:<code> &quot;123000&quot;</code> <code>&quot;&quot;</code></p>
 </li>
-<li><p><code>&quot;10100&quot;</code>：2个<code>0</code>    期望结果: <code>101</code> <code>00</code>     实际结果:<code>&quot;10100&quot;</code> <code>&quot;&quot;</code></p>
+<li><p><code>&quot;10100&quot;</code>：2个<code>0</code>    期望结果: <code>101</code> <code>00</code>     实际结果:<code> &quot;10100&quot;</code> <code>&quot;&quot;</code></p>
 </li>
-<li><p><code>&quot;1001&quot;</code>：0个<code>0</code>      期望结果: <code>1001</code> <code>&quot;&quot;</code>   实际结果:<code>&quot;1001&quot;</code> <code>&quot;&quot;</code></p>
+<li><p><code>&quot;1001&quot;</code>：0个<code>0</code>      期望结果: <code>1001</code> <code>&quot;&quot;</code>   实际结果:<code> &quot;1001&quot;</code> <code>&quot;&quot;</code></p>
 </li>
 </ul>
 <p>这是因为正则表达式默认使用贪婪匹配：任何一个规则，它总是尽可能多地向后匹配，因此，<code>\d+</code>总是会把后面的<code>0</code>包含进来。</p>
@@ -671,38 +675,43 @@ Matcher m1 <span class="token operator">=</span> p1<span class="token punctuatio
 <p>我们再来看这个正则表达式<code>(\d??)(9*)</code>，注意<code>\d?</code>表示匹配0个或1个数字，后面第二个<code>?</code>表示非贪婪匹配，因此，给定字符串<code>&quot;9999&quot;</code>，匹配到的两个子串分别是<code>&quot;&quot;</code>和<code>&quot;9999&quot;</code>，因为对于<code>\d?</code>来说，可以匹配1个<code>9</code>，也可以匹配0个<code>9</code>，但是因为后面的<code>?</code>表示非贪婪匹配，它就会尽可能少的匹配，结果是匹配了0个<code>9</code>。</p>
 <h3 id="8-搜索和替换"><a href="#8-搜索和替换" class="headerlink" title="8.搜索和替换"></a>8.搜索和替换</h3><h4 id="8-1-分割字符串"><a href="#8-1-分割字符串" class="headerlink" title="8.1 分割字符串"></a>8.1 分割字符串</h4><pre class=" language-java"><code class="language-java">System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token string">"a b c"</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"\\s"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//[a, b, c]</span>
 System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token string">"a b  c"</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"\\s"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//[a, b, "", c]</span>
-System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token string">"a,b ;; c"</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"[\\,\\s\\;]+"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//[a, b, c]</span></code></pre>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token string">"a,b ;; c"</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">"[\\,\\s\\;]+"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//[a, b, c]</span>
+</code></pre>
 <h4 id="8-2-搜索字符串"><a href="#8-2-搜索字符串" class="headerlink" title="8.2 搜索字符串"></a>8.2 搜索字符串</h4><pre class=" language-java"><code class="language-java">String s <span class="token operator">=</span> <span class="token string">"the quick brown fox jumps over the lazy dog."</span><span class="token punctuation">;</span>
 Pattern p3 <span class="token operator">=</span> Pattern<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span><span class="token string">"\\wo\\w"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">// \w匹配[A-Za-z0-9_]</span>
 Matcher m3 <span class="token operator">=</span> p3<span class="token punctuation">.</span><span class="token function">matcher</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">while</span> <span class="token punctuation">(</span>m3<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">while</span> <span class="token punctuation">(</span>m3<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
    String sub <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>m3<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> m3<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>sub<span class="token punctuation">)</span><span class="token punctuation">;</span>
    <span class="token comment" spellcheck="true">//row fox dog</span>
-<span class="token punctuation">}</span></code></pre>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
 <p>我们获取到<code>Matcher</code>对象后，不需要调用<code>matches()</code>方法（因为匹配整个串肯定返回false），而是反复调用<code>find()</code>方法，在整个串中搜索能匹配上<code>\\wo\\w</code>规则的子串，并打印出来。这种方式比<code>String.indexOf()</code>要灵活得多，因为我们搜索的规则是3个字符：中间必须是<code>o</code>，前后两个必须是字符<code>[A-Za-z0-9_]</code>。</p>
 <h4 id="8-3-替换字符串"><a href="#8-3-替换字符串" class="headerlink" title="8.3 替换字符串"></a>8.3 替换字符串</h4><pre class=" language-java"><code class="language-java">String s2 <span class="token operator">=</span> <span class="token string">"The     quick\t\t brown   fox  jumps   over the  lazy dog."</span><span class="token punctuation">;</span>
 String r <span class="token operator">=</span> s2<span class="token punctuation">.</span><span class="token function">replaceAll</span><span class="token punctuation">(</span><span class="token string">"\\s+"</span><span class="token punctuation">,</span> <span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//将多个空格替换成一个</span>
-System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// "The quick brown fox jumps over the lazy dog."</span></code></pre>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// "The quick brown fox jumps over the lazy dog."</span>
+</code></pre>
 <h4 id="8-4-反向引用"><a href="#8-4-反向引用" class="headerlink" title="8.4 反向引用"></a>8.4 反向引用</h4><pre class=" language-java"><code class="language-java">String s3 <span class="token operator">=</span> <span class="token string">"the quick brown fox jumps over the lazy dog."</span><span class="token punctuation">;</span>
-String r2 <span class="token operator">=</span> s3<span class="token punctuation">.</span><span class="token function">replaceAll</span><span class="token punctuation">(</span><span class="token string">"\\s([a-z]{4})\\s"</span><span class="token punctuation">,</span> <span class="token string">"&lt;b>$1&lt;/b>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>r2<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//the quick brown fox jumps&lt;b>over&lt;/b>the&lt;b>lazy&lt;/b>dog.</span></code></pre>
-<p>它实际上把任何4字符单词的前后用<code>&lt;b&gt;xxxx&lt;/b&gt;</code>括起来。实现替换的关键就在于<code>&quot; &lt;b&gt;$1&lt;/b&gt; &quot;</code>，它用匹配的分组子串<code>([a-z]{4})</code>替换了<code>$1</code>。</p>
+String r2 <span class="token operator">=</span> s3<span class="token punctuation">.</span><span class="token function">replaceAll</span><span class="token punctuation">(</span><span class="token string">"\\s([a-z]&amp;#123;4&amp;#125;)\\s"</span><span class="token punctuation">,</span> <span class="token string">"&lt;b>$1&lt;/b>"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>r2<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//the quick brown fox jumps&lt;b>over&lt;/b>the&lt;b>lazy&lt;/b>dog.</span>
+</code></pre>
+<p>它实际上把任何4字符单词的前后用<code>&lt;b&gt;xxxx&lt;/b&gt;</code>括起来。实现替换的关键就在于<code>&quot; &lt;b&gt;$1&lt;/b&gt; &quot;</code>，它用匹配的分组子串<code>([a-z]&#123;4&#125;)</code>替换了<code>$1</code>。</p>
 <h4 id="8-5-使用Map替换模板中的值"><a href="#8-5-使用Map替换模板中的值" class="headerlink" title="8.5 使用Map替换模板中的值"></a>8.5 使用Map替换模板中的值</h4><pre class=" language-java"><code class="language-java">        HashMap<span class="token operator">&lt;</span>String<span class="token punctuation">,</span> String<span class="token operator">></span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"name"</span><span class="token punctuation">,</span> <span class="token string">"Mary"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">"lang"</span><span class="token punctuation">,</span> <span class="token string">"Java"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        String model <span class="token operator">=</span> <span class="token string">"Hello, ${name}! You are learning ${lang}!"</span><span class="token punctuation">;</span>
-        Pattern pt <span class="token operator">=</span> Pattern<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span><span class="token string">"\\$\\{([a-z]+)}"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        String model <span class="token operator">=</span> <span class="token string">"Hello, $&amp;#123;name&amp;#125;! You are learning $&amp;#123;lang&amp;#125;!"</span><span class="token punctuation">;</span>
+        Pattern pt <span class="token operator">=</span> Pattern<span class="token punctuation">.</span><span class="token function">compile</span><span class="token punctuation">(</span><span class="token string">"\\$\\&amp;#123;([a-z]+)&amp;#125;"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         Matcher mt <span class="token operator">=</span> pt<span class="token punctuation">.</span><span class="token function">matcher</span><span class="token punctuation">(</span>model<span class="token punctuation">)</span><span class="token punctuation">;</span>
         StringBuilder sb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span> <span class="token punctuation">(</span>mt<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-           <span class="token comment" spellcheck="true">//0->${name}  1->name</span>
-           <span class="token comment" spellcheck="true">//0->${lang}  1->lang</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>mt<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+           <span class="token comment" spellcheck="true">//0->$&amp;#123;name&amp;#125;  1->name</span>
+           <span class="token comment" spellcheck="true">//0->$&amp;#123;lang&amp;#125;  1->lang</span>
            <span class="token comment" spellcheck="true">//0 代表整个匹配的字段  1代表匹配字段中的第一个分组</span>
            mt<span class="token punctuation">.</span><span class="token function">appendReplacement</span><span class="token punctuation">(</span>sb<span class="token punctuation">,</span> map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>mt<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
         mt<span class="token punctuation">.</span><span class="token function">appendTail</span><span class="token punctuation">(</span>sb<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>sb<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>sb<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 
             </div>
             <hr/>
@@ -1206,7 +1215,7 @@ System<span class="token punctuation">.</span>out<span class="token punctuation"
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 我吃大西瓜QAQ的破站<br />'
+            + '来源: 我吃大西瓜QAQ的小破站<br />'
             + '文章作者: 我吃大西瓜<br />'
             + '文章链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
