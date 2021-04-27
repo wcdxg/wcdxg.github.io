@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>微信PC防撤回教程</title>
+      <link href="/2021/04/27/wei-xin-pc-fang-che-hui-jiao-cheng/"/>
+      <url>/2021/04/27/wei-xin-pc-fang-che-hui-jiao-cheng/</url>
+      
+        <content type="html"><![CDATA[<h1 id="微信防撤回修改步骤"><a href="#微信防撤回修改步骤" class="headerlink" title="微信防撤回修改步骤"></a>微信防撤回修改步骤</h1><p>1.下载<code>x32dbg</code>软件</p><p>2.打开微信，选择文件-附加，选择<code>wechat</code>，标题为微信的那一个。</p><p>3.点击符号，选择<code>wechatwin.dll</code>，右键选择搜索-当前模块-字符串，搜索<code>revoke</code></p><p><img src="https://gitee.com/yuaihen/blog-img/raw/master/000546y0hnh7rvrx0c0x88.png" alt="img"></p><p>4.找到<code>revokemsg</code>，在<code>parseRevokeContent</code>上方的那一个</p><p>5.将push下方的call那一行修改为<code>nop</code>并填充</p><p><img src="https://gitee.com/yuaihen/blog-img/raw/master/000637jusdmr7kuuf27ncs.png" alt="img"></p><p><img src="https://gitee.com/yuaihen/blog-img/raw/master/000707yi8cz8ackz3p39g5.png" alt="img"></p><p>6.选择文件-补丁-修补文件，到处文件名为<code>WeChatWin.dll</code>，替换微信文件夹内的同名文件。</p><p><img src="https://gitee.com/yuaihen/blog-img/raw/master/000818xx3ly5zqkx7l5rxx.png" alt="img"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 微信 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>阿里云Maven jcenter地址</title>
       <link href="/2021/01/19/a-li-yun-maven-jcenter-cang-ku-di-zhi/"/>
       <url>/2021/01/19/a-li-yun-maven-jcenter-cang-ku-di-zhi/</url>
