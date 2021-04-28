@@ -347,9 +347,9 @@
       
         <tags>
             
-            <tag> RecyclerView </tag>
-            
             <tag> GridView </tag>
+            
+            <tag> RecyclerView </tag>
             
             <tag> 滑动冲突 </tag>
             
