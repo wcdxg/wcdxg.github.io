@@ -44,7 +44,7 @@
     <link href="https://yuaihen.github.io/2021/01/19/a-li-yun-maven-jcenter-cang-ku-di-zhi/"/>
     <id>https://yuaihen.github.io/2021/01/19/a-li-yun-maven-jcenter-cang-ku-di-zhi/</id>
     <published>2021-01-19T03:27:56.000Z</published>
-    <updated>2021-01-19T03:29:59.084Z</updated>
+    <updated>2021-04-29T09:55:56.783Z</updated>
     
     
       
@@ -52,7 +52,7 @@
         
         
     <summary type="html">&lt;p&gt;添加到IDEA 提升依赖下载速度&lt;/p&gt;
-&lt;pre class=&quot; language-groovy&quot;&gt;&lt;code class=&quot;language-groovy&quot;&gt;repositories &lt;span class=&quot;token</summary>
+&lt;pre class=&quot; language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;repositories &lt;span class=&quot;token</summary>
         
       
     
