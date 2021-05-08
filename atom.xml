@@ -6,7 +6,7 @@
   <link href="https://yuaihen.github.io/atom.xml" rel="self"/>
   
   <link href="https://yuaihen.github.io/"/>
-  <updated>2021-04-27T09:15:44.046Z</updated>
+  <updated>2021-05-08T07:36:43.602Z</updated>
   <id>https://yuaihen.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Flutter笔记</title>
+    <link href="https://yuaihen.github.io/2021/05/08/flutter-bi-ji/"/>
+    <id>https://yuaihen.github.io/2021/05/08/flutter-bi-ji/</id>
+    <published>2021-05-08T07:22:05.000Z</published>
+    <updated>2021-05-08T07:36:43.602Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Flutter&quot;&gt;&lt;a href=&quot;#Flutter&quot; class=&quot;headerlink&quot; title=&quot;Flutter&quot;&gt;&lt;/a&gt;Flutter&lt;/h1&gt;&lt;h2 id=&quot;1-Widget&quot;&gt;&lt;a href=&quot;#1-Widget&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Flutter" scheme="https://yuaihen.github.io/categories/Flutter/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>微信PC防撤回教程</title>
@@ -566,47 +589,6 @@ public class MyGridView extends GridView &amp;#123;
     
     
     <category term="黑白化探索" scheme="https://yuaihen.github.io/tags/%E9%BB%91%E7%99%BD%E5%8C%96%E6%8E%A2%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Fragment的嵌套和切换代码</title>
-    <link href="https://yuaihen.github.io/2020/04/29/9.fragment-de-qian-tao-he-qie-huan-dai-ma/"/>
-    <id>https://yuaihen.github.io/2020/04/29/9.fragment-de-qian-tao-he-qie-huan-dai-ma/</id>
-    <published>2020-04-29T09:58:42.000Z</published>
-    <updated>2020-04-29T10:09:41.262Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;在Activity中获取到FragmentManager&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;mFragmentManager = getSupportFragmentManager();
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;添加或者切换Fragment&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;java&quot;&gt;private void addView(BaseFragment fragment, String tag) &amp;#123;
-        mFragmentTransaction = mFragmentManager.beginTransaction();
-        //优先检查，fragment是否存在，避免重叠
-        BaseFragment tempFragment = (BaseFragment) mFragmentManager.findFragmentByTag(tag);
-        if (tempFragment != null) &amp;#123;
-            fragment = tempFragment;
-        &amp;#125;
-        if (fragment.isAdded()) &amp;#123;
-            addOrShowFragment(fragment, tag);
-        &amp;#125; else &amp;#123;
-            if (currentFragment != null &amp;amp;&amp;amp; currentFragment.isAdded()) &amp;#123;
-                mFragmentTransaction.hide(currentFragment).add(R.id.fl_container, fragment, tag).commitAllowingStateLoss();
-            &amp;#125; else &amp;#123;
-                mFragmentTransaction.add(R.id.fl_container, fragment, tag).commitAllowingStateLoss();
-            &amp;#125;
-            currentFragment = fragment;
-        &amp;#125;
-    &amp;#125;
-&lt;/code&gt;&lt;/pre&gt;</summary>
-    
-    
-    
-    <category term="Android" scheme="https://yuaihen.github.io/categories/Android/"/>
-    
-    
-    <category term="Fragment" scheme="https://yuaihen.github.io/tags/Fragment/"/>
     
   </entry>
   
